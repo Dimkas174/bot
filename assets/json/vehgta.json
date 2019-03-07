@@ -1,0 +1,940 @@
+{
+    "carf": {
+        "des": "Двухдверный спорткар.",
+        "img": [
+            "https://i.imgur.com/YcvWpl9.jpg", 
+            "https://i.yapx.ru/BzqAf.gif"
+        ]
+    },
+
+    "cart": {
+        "img": [
+            "http://i.imgur.com/XBsJZXm.gif",
+            "https://i.imgur.com/qiiQ7H7.jpg",
+            "https://i.imgur.com/NMvZKlh.jpg",
+            "https://i.imgur.com/wSYWIHT.jpg",
+            "https://i.imgur.com/hKKz5g4.jpg",
+            "https://i.imgur.com/8nmJex1.jpg",
+            "https://i.imgur.com/Ki4eV6j.jpg",
+            "https://i.imgur.com/jIHY3iL.jpg",
+            "https://i.imgur.com/GYwlcL6.jpg",
+            "https://i.imgur.com/H80CjSL.jpg",
+            "https://i.imgur.com/oOX7Mra.jpg",
+            "https://i.imgur.com/3ilqWlS.jpg",
+            "https://i.imgur.com/88snbNs.jpg",
+            "https://i.imgur.com/1Gbf6lT.jpg"
+        ]
+    },
+
+    "motobf": {
+        "img": [
+            "https://i.imgur.com/26137ee.jpg", 
+            "https://i.imgur.com/mU4vvnS.jpg",
+            "https://i.imgur.com/0fvPnHz.jpg",
+            "https://i.imgur.com/n6TXz9V.jpg",
+            "https://i.imgur.com/4Zpz9mr.jpg"
+        ]
+    },
+
+    "akuma": {
+        "des": "Мотоцикл-стритфайтер. Имеет облегчённую кончтрукцию и соответственно быстрый разгон.",
+        "img": [
+            "https://i.imgur.com/90Kt6lq.jpg",
+            "https://i.imgur.com/KPFrw7q.jpg",
+            "https://i.imgur.com/MW0xfb3.jpg"
+        ]
+    },
+
+    "avarus": {
+        "img": [
+            "http://i.imgur.com/dqBtTX4.jpg", 
+            "https://i.imgur.com/e9FJvyE.jpg",
+            "http://i.imgur.com/BEOJt7a.jpg",
+            "https://i.imgur.com/YO0zYJF.jpg",
+            "https://i.imgur.com/w0oRg3J.jpg"
+        ]
+    },
+
+    "banshee": {
+        "des": "Спортивный кабриолет средних размеров со складной жесткой крышей. Может быть полоска по центру кузова.",
+        "img": [
+            "https://i.imgur.com/86102co.jpg", 
+            "https://i.imgur.com/94wS1nA.jpg",
+            "https://i.imgur.com/dhujpom.jpg" 
+        ]
+    },
+
+    "bati": {
+        "img": [
+            "https://i.imgur.com/uxn6Yqb.jpg", 
+            "https://i.imgur.com/qzsGJzP.jpg",
+            "https://i.imgur.com/SkyjYTl.jpg",
+            "https://i.imgur.com/PWVOg2U.jpg",
+            "https://i.imgur.com/RIGqVyy.jpg",
+            "https://i.imgur.com/RtnhhYo.jpg",
+            "https://i.imgur.com/HOOj7eS.jpg",
+            "https://i.imgur.com/gZW7CQ9.jpg",
+            "https://i.imgur.com/ODQp5LU.jpg",
+            "https://i.imgur.com/R3Fi8yc.jpg",
+            "https://i.imgur.com/6eQ81mP.jpg",
+            "https://i.imgur.com/bl5EgHk.jpg",
+            "https://i.imgur.com/fg5pm5n.jpg",
+            "https://i.imgur.com/SfJGbrH.jpg",
+            "https://i.imgur.com/bADcU8v.png",
+            "https://i.imgur.com/ULrf5WJ.jpg",
+            "https://i.imgur.com/zNjNKZd.jpg",
+            "https://i.imgur.com/kfoRHoC.jpg",
+            "https://i.imgur.com/UYAwHrK.jpg",
+            "https://i.imgur.com/cco77YS.jpg",
+            "https://i.imgur.com/e82PDK0.jpg"
+        ]
+    },
+
+    "bestia": {
+        "img": [
+            "https://i.imgur.com/cf8uXkQ.png"
+        ]
+    },
+
+    "brawler": {
+        "img": [
+            "https://i.imgur.com/mfcf6x3.jpg", 
+            "https://i.imgur.com/5uXlZhS.jpg",
+            "https://i.imgur.com/UzUmVdH.jpg",
+            "https://i.imgur.com/wyCs4JX.jpg",
+            "https://i.imgur.com/SQdFcqX.jpg",
+            "https://i.imgur.com/dpbzs02.jpg",
+            "https://i.imgur.com/O0xsxmt.jpg",
+            "https://i.imgur.com/2hfmyAS.jpg"
+        ]
+    },
+
+    "buffalo": {
+        "img": [
+            "https://i.imgur.com/2ecsxml.jpg",
+            "https://i.imgur.com/9BzNMVr.png",
+            "https://i.imgur.com/6jYrInD.jpg",
+            "https://i.imgur.com/xvf0JXm.jpg"
+        ]
+    },
+
+    "bullet": {
+        "des": "Спортивный 2-дверный суперкар имеющий высокую скорость, отличную управляемость и хорошие тормоза. Задний привод. Двигатель - средний V8.",
+        "img": [
+            "https://i.imgur.com/qXmGq7M.jpg",
+            "https://i.imgur.com/T1FZXRL.jpg"
+        ]
+    },
+
+    "carbonizzare": {
+        "img": [
+            "https://i.imgur.com/Lse045L.jpg",
+            "https://i.imgur.com/oSGRplK.jpg",
+            "https://i.imgur.com/773whTi.jpg",
+            "https://i.imgur.com/Tr7uKa9.jpg",
+            "https://i.imgur.com/pzvCHfU.jpg",
+            "https://i.imgur.com/4P6AZZD.jpg",
+            "https://i.imgur.com/zjNUefI.jpg",
+            "https://i.imgur.com/tkhiDWy.jpg",
+            "https://i.imgur.com/4mlVASe.jpg"
+        ]
+    },
+
+    "cyclone": {
+        "des": "Электрокар. Является самым быстрым суперкаром из-за хорошего разгона. Вместимость 2 человека.",
+        "img": [
+            "https://i.imgur.com/E5nLyBa.jpg",
+            "https://i.imgur.com/lDt17qN.jpg",
+            "https://i.imgur.com/CfG0aLF.jpg",
+            "https://i.imgur.com/8VUYDB7.jpg",
+            "https://i.imgur.com/OkuCCVN.jpg",
+            "https://i.imgur.com/vTmJeYL.jpg"
+        ]
+    },
+
+    "cheetahc": {
+        "img": [
+            "https://i.imgur.com/h39Pak4.jpg",
+            "https://i.imgur.com/hFa3IW4.jpg",
+            "https://i.imgur.com/U7izNs3.jpg",
+            "https://i.yapx.ru/BzrET.gif",
+            "https://i.imgur.com/ziSUC9q.jpg"
+        ]
+    },
+
+    "chimera": {
+        "img": [
+            "https://i.imgur.com/qaNOYqA.jpg",
+            "https://i.imgur.com/7sp6GBM.jpg",
+            "https://i.imgur.com/ynj707V.jpg",
+            "https://i.imgur.com/BxUcHbK.jpg",
+            "https://i.imgur.com/kbUBO7s.jpg"
+        ]
+    },
+
+    "cognoscentic": {
+        "des": "Двухдверный автомобиль класса «люкс» с кузовом типа «купе» со снимаемой крышей (кабриолет). Самый большой в своём классе - 2100 килограмм. 5.8-и литровый 8-ми цилиндровый двигатель",
+        "img": [
+            "https://i.imgur.com/WJwvfBz.jpg",
+            "https://i.imgur.com/FFID3CW.png"
+        ]
+    },
+
+    "cognoscenti": {
+        "des": "Престижный автомобиль с внушительными габаритами и большим весом.",
+        "img": [
+            "https://i.imgur.com/J5X5PXN.jpg",
+            "https://i.imgur.com/rHIDHEF.jpg",
+            "https://i.imgur.com/Bt9IMtD.jpg",
+            "https://i.imgur.com/N9p7Hko.jpg",
+            "https://i.imgur.com/4a8FoVI.jpg",
+            "https://i.imgur.com/oMhYeVS.jpg"
+        ]
+    },
+
+    "coquette": {
+        "img": [
+            "https://www.igta5.com/images/700x230/coquette1f.jpg",
+            "https://i.imgur.com/7okTpbk.jpg"
+        ]
+    },
+
+    "coquettec": {
+        "des": "Спорткар имеющий хорошую максимальную скорость и ускорение, благодаря двигателю V8. Крепкая, долговечная конструкция.",
+        "img": [
+            "https://i.imgur.com/EKP5hkS.gif",
+            "https://i.imgur.com/IuqnQIm.gif",
+            "https://i.imgur.com/s5NDyB4.jpg",
+            "https://i.imgur.com/0OeMMo2.jpg",
+            "https://i.imgur.com/t3B8iBc.jpg",
+            "https://i.imgur.com/1ONOqDC.jpg",
+            "https://i.imgur.com/W9CgslC.jpg",
+            "https://i.imgur.com/yeq9PVw.jpg",
+            "https://i.imgur.com/nnknKnY.jpg",
+            "https://i.imgur.com/mnHQhKf.jpg",
+            "https://i.imgur.com/j5G4odN.png",
+            "https://i.imgur.com/lhVeFZz.png",
+            "https://i.imgur.com/ed1vt38.jpg",
+            "https://i.imgur.com/UY75DES.jpg",
+            "https://i.imgur.com/J2M9Ukd.jpg",
+            "https://i.imgur.com/JvamMKk.png",
+            "https://i.imgur.com/Em3MwRr.jpg",
+            "https://i.imgur.com/xEavsdo.jpg"
+        ]
+    },
+
+    "cometr": {
+        "img": [
+            "https://i.imgur.com/SWHqp73.jpg",
+            "https://i.imgur.com/TdpOLRL.png",
+            "https://i.imgur.com/WyJP2VX.png",
+            "https://i.imgur.com/4Hkl9LR.png",
+            "https://i.imgur.com/UfdW7sa.jpg",
+            "https://i.imgur.com/3eNMa1I.jpg",
+            "https://i.imgur.com/3OlLnNQ.jpg"
+        ]
+    },
+
+    "comet": {
+        "img": [
+            "https://i.imgur.com/qKiqEy0.jpg",
+            "https://i.imgur.com/4ZROzzX.jpg",
+            "https://i.imgur.com/jAFqtBF.jpg",
+            "https://i.imgur.com/c5XLjE0.jpg",
+            "https://i.imgur.com/tZz4Kdg.jpg",
+            "https://i.imgur.com/ithnqtC.jpg",
+            "https://i.imgur.com/RlvRpL4.jpg",
+            "http://i.imgur.com/AGFm46G.jpg"
+        ]
+    },
+
+    "contender": {
+        "des": "Современный пикап. Двигатель с турбонаддувом. Впечатляющая прочность.",
+        "img": [
+            "https://i.imgur.com/CcBuG3v.jpg",
+            "https://i.imgur.com/2qbA5gT.jpg",
+            "https://i.imgur.com/ZZjrLPg.jpg",
+            "https://i.imgur.com/8aheybQ.jpg",
+            "https://i.imgur.com/prrl61w.jpg",
+            "https://i.imgur.com/TLbBdEb.jpg",
+            "https://i.imgur.com/EwtueRu.jpg",
+            "https://i.imgur.com/60BMZS8.jpg",
+            "https://i.imgur.com/2D7ir4U.jpg"
+        ]
+    },
+
+    "daemon": {
+        "img": [
+            "https://i.imgur.com/z4ikA4n.jpg",
+            "https://i.imgur.com/9ox5Vw4.jpg",
+            "https://i.imgur.com/ADhuVrn.jpg",
+            "https://i.imgur.com/Bhp8zXT.jpg",
+            "https://i.imgur.com/3W71Ymm.jpg",
+            "https://i.imgur.com/QO19VFv.jpg",
+            "https://i.imgur.com/1pzSeVY.jpg",
+            "https://i.imgur.com/PYo6B7H.jpg",
+            "https://i.imgur.com/0BJM0rr.jpg",
+            "https://i.imgur.com/vBY7gSs.jpg"
+        ]
+    },
+
+    "defiler": {
+        "des": "Кастомный мотоцикл стритфайтер.",
+        "img": [
+            "https://i.imgur.com/lsFGDqX.jpg",
+            "https://i.imgur.com/cZ3uM5R.jpg", 
+            "https://i.imgur.com/qikCGjy.jpg",
+            "https://i.imgur.com/z2avqH4.jpg"
+        ]
+    },
+
+    "diabolus": {
+        "img": [
+            "https://i.imgur.com/VuMkI9y.jpg",
+            "https://i.imgur.com/lbp5Wst.jpg",
+            "https://i.imgur.com/qv5RqBD.jpg",
+            "https://i.imgur.com/snOQSVJ.jpg",
+            "https://i.imgur.com/KWpES1K.jpg",
+            "https://i.imgur.com/GvwN8TN.jpg",
+            "https://i.imgur.com/7dZsgs8.jpg",
+            "https://i.imgur.com/Oqpttwy.jpg"
+        ]
+    },
+
+    "dominator": {
+        "des": "Двухдверный маслкар с передним двигателем и задним приводом. Имеет высокий вращающий момент двигателя V8, который даёт приличное ускорение и высокую скорость.",
+        "img": [
+            "https://i.imgur.com/fMNmAtJ.jpg",
+            "https://i.imgur.com/yHAcn3N.jpg",
+            "https://i.imgur.com/0GReqX2.jpg",
+            "https://i.imgur.com/CUQKVlD.jpg",
+            "https://i.imgur.com/9kDLvtm.jpg",
+            "https://i.imgur.com/PFNm6w6.jpg",
+            "https://i.imgur.com/awe2tIZ.jpg",
+            "https://i.imgur.com/bKuOvcX.png"
+        ]
+    },
+
+    "doublet": {
+        "img": [
+            "https://i.imgur.com/4AzaPBm.jpg",
+            "http://i.imgur.com/1VSzbyW.jpg"
+        ]
+    },
+
+    "dukes": {
+        "des": "Двухдверный мускулкар. Имеет высокую скорость, хорошую управляемость.",
+        "img": [
+            "https://i.imgur.com/Jv6fO7p.jpg",
+            "https://i.imgur.com/ASga4Y0.jpg", 
+            "https://i.imgur.com/RPcEBHN.jpg"
+        ]
+    },
+
+    "elegyrh": {
+        "des": "Японский спорткар. Имеет быстрый разгон и хорошую управляемость.",
+        "img": [
+            "http://i.yapx.ru/Bz5n3.gif",
+            "https://i.imgur.com/y52tYle.jpg",
+            "https://i.imgur.com/X4avXbG.jpg",
+            "https://i.imgur.com/LRLcVr9.jpg",
+            "https://i.imgur.com/oABnkv4.jpg",
+            "https://i.imgur.com/cmXdoCo.jpg",
+            "https://i.imgur.com/Jv1qjWU.jpg",
+            "https://i.imgur.com/l11jF0b.jpg",
+            "https://i.imgur.com/VYsyVHt.jpg",
+            "https://i.imgur.com/GHDHIhn.jpg",
+            "https://i.imgur.com/eAkdsRA.jpg",
+            "https://i.imgur.com/8khfEs4.jpg"
+        ]
+    },
+
+    "elegyr": {
+        "img": [
+            "http://i.yapx.ru/BzvUk.gif",
+            "https://i.imgur.com/ZA8GXem.jpg",
+            "https://i.imgur.com/MXbo6nQ.jpg",
+            "https://i.imgur.com/y6LlJn0.jpg",
+            "https://i.imgur.com/RaGoI4l.jpg",
+            "https://i.imgur.com/pqXI4XU.png",
+            "https://i.imgur.com/Utg2BHN.jpg",
+            "https://i.imgur.com/t4TKITm.jpg",
+            "https://i.imgur.com/NqMvzx8.jpg",
+            "https://i.imgur.com/8h9b5ba.jpg",
+            "https://i.imgur.com/Awg5oe3.jpg",
+            "https://i.imgur.com/Duej4G5.jpg",
+            "https://i.imgur.com/kp7tZf1.jpg",
+            "https://i.imgur.com/olFpeS1.png",
+            "http://i66.tinypic.com/e16pw2.jpg"
+        ]
+    },
+
+    "enduro": {
+        "img": [
+            "https://i.imgur.com/HUxm3fU.jpg",
+            "https://i.imgur.com/k9Mi7Hv.jpg",
+            "https://i.imgur.com/CBo6bF3.jpg",
+            "https://i.imgur.com/ts2Fr6F.jpg",
+            "https://i.imgur.com/DmPUiXo.jpg",
+            "https://i.imgur.com/RlYRCTT.jpg",
+            "https://i.imgur.com/AT8jLqY.jpg"
+        ]
+    },
+
+    "entity": {
+        "des": "Шведский суперкар. Один из самых быстрых.",
+        "img": [
+            "https://i.imgur.com/xCuhQk9.jpg",
+            "https://i.imgur.com/6YueRpb.jpg",
+            "https://i.imgur.com/yjf3JSh.jpg"
+        ]
+    },
+
+    "feltzer": {
+        "img": [
+            "https://i.imgur.com/VqCwUP6.jpg",
+            "https://i.imgur.com/wPaIUF1.jpg",
+            "https://i.imgur.com/GC8m90D.jpg",
+            "https://i.imgur.com/n6K9oj9.jpg",
+            "https://i.imgur.com/WQvZK9s.jpg",
+            "https://i.imgur.com/qpyfYdC.jpg",
+            "https://i.imgur.com/boR6mVq.jpg",
+            "https://i.imgur.com/ZcuKj4e.jpg",
+            "https://i.imgur.com/iW6VgQ7.jpg",
+            "https://i.imgur.com/pF1rHOD.jpg",
+            "https://i.imgur.com/hnyecmk.jpg",
+            "https://i.imgur.com/XMYeTZm.jpg",
+            "https://i.imgur.com/q681GX8.jpg"
+        ]
+    },
+
+    "felon": {
+        "des": "4 дверный седан c передним двигателем и задним приводом.",
+        "img": [
+            "https://i.imgur.com/Yrprrk0.jpg",
+            "https://i.imgur.com/UCzjd5Z.jpg",
+            "https://i.imgur.com/2Fj56UV.jpg",
+            "https://i.imgur.com/Iiy5mdm.jpg",
+            "https://i.imgur.com/x4EAa49.jpg",
+            "https://i.imgur.com/NTiVZN8.jpg",
+            "https://i.imgur.com/N2QAlKj.png",
+            "https://i.imgur.com/R57W0q5.png"
+        ]
+    },
+
+    "felongt": {
+        "des": "Двухдверный кабриолет c передним двигателем и задним приводом. Имеет хороший разгон.",
+        "img": [
+            "https://i.imgur.com/ZhXPxrt.jpg",
+            "https://i.imgur.com/eS6GG0d.jpg"
+        ]
+    },
+
+    "futo": {
+        "des": "Японский двухдверный купе.",
+        "img": [
+            "https://i.imgur.com/N433hrP.png",
+            "https://i.imgur.com/n1qvVMo.jpg",
+            "https://i.imgur.com/ArE96nf.jpg",
+            "https://i.imgur.com/nu5uUdY.jpg"
+        ]
+    },
+
+    "gauntlet": {
+        "des": "Двухдверный маслкар с мощным двигателем (423 л.с.). Обладает высоким ускорением и умеренным заносом.",
+        "img": [
+            "https://images4.alphacoders.com/587/587526.jpg", 
+            "https://i.imgur.com/XUmJeOI.jpg"
+        ]
+    },
+
+    "gp": {
+        "img": [
+            "http://i.yapx.ru/BzviR.gif",
+            "https://i.imgur.com/wgYBX94.jpg",
+            "https://i.imgur.com/CIdZh3T.jpg",
+            "https://i.imgur.com/M5rUlmn.jpg",
+            "https://i.imgur.com/oFYYqnL.jpg",
+            "https://i.imgur.com/KQ2nsL0.jpg",
+            "https://i.imgur.com/b98chLi.jpg",
+            "https://i.imgur.com/aJOWBwu.jpg",
+            "https://i.imgur.com/gTHhP7o.jpg",
+            "https://i.imgur.com/PZ69hQp.png",
+            "https://i.imgur.com/8cg3Xek.jpg",
+            "https://i.imgur.com/jojRoBB.png",
+            "https://i.imgur.com/c5vWOpf.png",
+            "https://i.imgur.com/SkckCvH.png",
+            "https://i.imgur.com/Tm0q8nA.jpg",
+            "https://i.imgur.com/JFlZSLf.jpg",
+            "https://i.imgur.com/CMOfT6Z.png",
+            "https://i.imgur.com/zTSH1x7.jpg",
+            "https://i.imgur.com/eCjATzb.png",
+            "https://i.imgur.com/8x5ZKFf.png"
+        ]
+    },
+
+    "guardian": {
+        "img": [
+            "https://i.imgur.com/IW7i11w.jpg",
+            "https://i.imgur.com/tiuuFzG.jpg",
+            "https://i.imgur.com/KhkAVO8.jpg"
+        ]
+    },
+
+    "hakuchou": {
+        "des": "Японский спортбайк. Имеет фирменную раскраску с иероглифом на обтекателе (死 переводится как «Смерть»). Является одним из самых быстрых.",
+        "img": [
+            "https://i.imgur.com/juDm2WP.png",
+            "https://i.imgur.com/yuvRmxe.jpg",
+            "https://i.imgur.com/j7bwAR2.jpg",
+            "https://i.imgur.com/Uz1Ydla.jpg",
+            "https://i.imgur.com/bqTnVaW.jpg",
+            "https://i.imgur.com/JecwS3b.jpg",
+            "https://i.imgur.com/g3HnE0k.gif",
+            "https://i.imgur.com/9EDI7UX.jpg",
+            "https://i.imgur.com/VFimtkQ.jpg",
+            "https://i.imgur.com/RfwFILr.jpg",
+            "https://i.imgur.com/HGQZaIJ.jpg",
+            "https://i.imgur.com/56oKkhx.jpg",
+            "https://i.imgur.com/iBY9ZLi.jpg"
+        ]
+    },
+
+    "lynx": {
+        "img": [
+            "https://i.imgur.com/mYP8sm2.jpg",
+            "https://i.imgur.com/zebsUge.jpg",
+            "https://i.imgur.com/pQnciwS.jpg",
+            "https://i.imgur.com/DsHaKAF.jpg"
+        ]
+    },
+
+    "manchez": {
+        "des": "Эндуро байк. Выглядит как Sanchez, но с видоизменённой передней частью и немного другим корпусом.",
+        "img": [
+            "https://i.imgur.com/rrYnVVI.jpg",
+            "https://i.imgur.com/HIh9FHL.jpg",
+            "https://i.imgur.com/xds07AI.jpg",
+            "https://i.imgur.com/8hKVSKa.jpg",
+            "https://i.imgur.com/DHxHszC.jpg",
+            "https://i.imgur.com/4O3KS4b.jpg",
+            "https://i.imgur.com/vGjH8OT.jpg",
+            "https://i.imgur.com/LW6LnkO.jpg",
+            "https://i.imgur.com/undefined.jpg"
+        ]
+    },
+
+    "marquis": {
+        "img": [
+            "https://i.imgur.com/gmDHqfQ.jpg", 
+            "https://i.imgur.com/1NIYqmD.jpg"
+        ]
+    },
+
+    "massacror": {
+        "des": "Двухдверный роскошный спорткар. Имеет исключительное торможение, лучшую максимальную скорость в своём классе и гоночную раскраску от Dewbauchee.",
+        "img": [
+            "https://i.imgur.com/JOAUHcw.jpg",
+            "https://i.imgur.com/7nPGwVF.jpg",
+            "https://i.imgur.com/6tKL4pT.jpg",
+            "https://i.imgur.com/imy3MZQ.jpg",
+            "https://i.imgur.com/1a6YB9d.jpg",
+            "https://i.imgur.com/5WzrqUI.jpg",
+            "https://i.imgur.com/UcV1kGL.jpg"
+        ]
+    },
+
+    "massacro": {
+        "des": "Двухдверный роскошный спорткар. Имеет исключительное торможение, лучшую максимальную скорость в своём классе.",
+        "img": [
+            "http://i.yapx.ru/BzwaV.gif",
+            "https://i.imgur.com/rouw7xa.jpg",
+            "https://i.imgur.com/Y5wRaNw.jpg",
+            "https://i.imgur.com/PO6ABQG.jpg",
+            "https://i.imgur.com/SECDzPG.jpg",
+            "https://i.imgur.com/sKO5Oer.jpg",
+            "https://i.imgur.com/XEEB0LI.jpg",
+            "https://i.imgur.com/Xv2bd7l.gif",
+            "https://i.imgur.com/kkSOnA4.jpg",
+            "https://i.imgur.com/SsjPq08.jpg",
+            "https://i.imgur.com/CTZTR84.jpg",
+            "https://i.imgur.com/2TRFz5O.jpg"
+        ]
+    },
+
+    "mesa": {
+        "des": "Внедорожник. Из-за своих компактных размеров имеет достаточно хорошую скорость.",
+        "img": [
+            "https://i.imgur.com/5pEHgup.jpg",
+            "https://i.imgur.com/S7lXLGm.jpg",
+            "https://i.imgur.com/7qpzvau.jpg",
+            "https://i.imgur.com/nKuv5Ua.png",
+            "https://i.imgur.com/DSryUYJ.jpg",
+            "https://i.imgur.com/GLUVYqQ.jpg",
+            "https://i.imgur.com/bicsEWM.jpg",
+            "https://i.imgur.com/lxAy0C0.jpg"
+        ]
+    },
+
+    "monroe": {
+        "img": [
+            "https://i.imgur.com/MfV1lhK.jpg",
+            "https://i.imgur.com/OIy2fpb.jpg",
+            "https://i.imgur.com/AhF7SQZ.jpg",
+            "https://i.imgur.com/RZeILgF.jpg",
+            "https://i.imgur.com/Lg2t9j9.jpg",
+            "https://i.imgur.com/3s9BttY.png"
+        ]
+    },
+
+    "nero": {
+        "img": [
+            "http://i.yapx.ru/Bzuo0.gif",
+            "https://i.imgur.com/6kVW07F.jpg",
+            "https://i.imgur.com/6qz71cB.jpg",
+            "https://i.imgur.com/7RLIwDy.jpg",
+            "https://i.imgur.com/u6R4VZu.jpg"
+        ]
+    },
+
+    "neroc": {
+        "img": [
+            "https://i.imgur.com/GyE93Ph.jpg",
+            "https://i.imgur.com/iWkNLKZ.jpg",
+            "https://i.imgur.com/YNiCcjT.jpg"
+        ]
+    },
+
+    "nightblade": {
+        "img": [
+            "https://i.imgur.com/CJCdwfm.jpg",
+            "https://i.imgur.com/iXAnnWG.jpg",
+            "https://i.imgur.com/EXSqWv8.jpg",
+            "https://i.imgur.com/JAG3Eev.png",
+            "https://i.imgur.com/4QXJgZY.jpg"
+        ]
+    },
+
+    "omnis": {
+        "img": [
+            "http://i.yapx.ru/Bz49a.gif",
+            "https://i.imgur.com/IqgLnMZ.png"
+        ]
+    },
+
+    "osiris": {
+        "img": [
+            "https://i.imgur.com/z45zvAL.jpg", 
+            "https://i.yapx.ru/BzwE5.gif"
+        ]
+    },
+
+    "primo": {
+        "des": "Четырёхдверный седан. Прекрасная управляемость, не слишком большой вес и хорошая максимальная скорость.",
+        "img": [
+            "https://i.imgur.com/aYrsAsG.jpg",
+            "https://i.imgur.com/kdzMz6M.jpg",
+            "https://i.imgur.com/1lgmWLW.jpg",
+            "https://i.imgur.com/eNh9UAx.jpg"
+        ]
+    },
+
+    "primoc": {
+        "img": [
+            "https://i.imgur.com/oGEnrTi.jpg",
+            "https://i.imgur.com/9I77y54.jpg",
+            "https://i.imgur.com/2iPMVXB.jpg"
+        ]
+    },
+
+    "rapidgtc": {
+        "des": "Двухдверный классический спортивный автомобиль. Имеет уникальный деревянный интерьер с перекрашиваемым кожаным салоном и двигатель V8 под капотом. По управляемости, максимальной скорости и разгону данный автомобиль является одним из лучших в своём классе и имеет большой ассортимент деталей для тюнинга.",
+        "img": [
+            "https://i.imgur.com/W160hTO.png",
+            "https://i.imgur.com/42vKZoz.jpg",
+            "https://i.imgur.com/ThfMXkp.png",
+            "https://i.imgur.com/qKV7x1Y.jpg",
+            "https://i.imgur.com/H90upvU.png",
+            "https://i.imgur.com/fZX9wTi.jpg",
+            "https://i.imgur.com/l7EjUND.jpg",
+            "https://i.imgur.com/hSwVNqo.jpg",
+            "https://i.imgur.com/Kf9kqO0.png",
+            "https://i.imgur.com/ytlEX1a.jpg",
+            "https://i.imgur.com/eWVD3Pw.jpg",
+            "https://i.imgur.com/YNC3G2Z.jpg",
+            "https://i.imgur.com/1kBKxvJ.jpg"
+        ]
+    },
+
+    "rapidgt": {
+        "des": "Двухдверный роскошный купе или родстер. Имеет хорошее ускорение, двигатель V8, рам-воздухозаборник, большие перфорированные тормозные диски, красные, шести-поршневые тормозные суппорты.",
+        "img": [
+            "https://i.imgur.com/kyqfZhX.jpg",
+            "https://i.imgur.com/PUKxOte.png"
+        ]
+    },
+
+    "ruffian": {
+        "img": [
+            "https://i.imgur.com/4jGZbi4.jpg",
+            "https://i.imgur.com/wYmvFWO.jpg"
+        ]
+    },
+
+    "ruston": {
+        "img": [
+            "https://i.imgur.com/9utOQ4C.jpg",
+            "https://i.imgur.com/UIrSjVS.jpg",
+            "https://i.imgur.com/KW8JA1k.jpg",
+            "https://i.imgur.com/tkygevP.png",
+            "https://i.imgur.com/k35raQw.png",
+            "https://i.imgur.com/1jM9Vtd.png"
+        ]
+    },
+
+    "sandkingxl": {
+        "des": "Внедорожник. Потрясающий разгон, приличная максимальная скорость, неплохие тормоза, большой клиренс и изумительный внешний вид.",
+        "img": [
+            "https://i.imgur.com/aPQiTm4.jpg",
+            "https://i.imgur.com/OwTK1N8.jpg",
+            "https://i.imgur.com/dP1039E.gif",
+            "https://i.imgur.com/LFJj8TT.jpg",
+            "https://i.imgur.com/j7KGsoX.jpg",
+            "https://i.imgur.com/gsNAPww.png",
+            "https://i.imgur.com/CvcwR1l.png",
+            "https://i.imgur.com/GlXW18M.jpg"
+        ]
+    },
+
+    "sandkingswb": {
+        "des": "Внедорожник. Потрясающий разгон, приличная максимальная скорость, неплохие тормоза, большой клиренс и изумительный внешний вид.",
+        "img": [
+            "https://i.imgur.com/gVXq7Qo.jpg",
+            "https://i.imgur.com/q3NOMXg.jpg"
+        ]
+    },
+
+    "sabret": {
+        "des": "9-тилитровый двигатель V8 с турбонаддувом, пятиступенчатая коробка передач, задний привод, уникальный выхлоп, низкое сцепление задних шин и очень мягкая подвеска.",
+        "img": [
+            "https://i.imgur.com/XtiYEas.jpg",
+            "https://i.imgur.com/PnmH5bh.jpg",
+            "https://i.imgur.com/qGWjcgN.jpg",
+            "https://i.imgur.com/mdBPREF.jpg",
+            "https://i.imgur.com/50IUUBj.jpg",
+            "https://i.imgur.com/HIinbkm.jpg",
+            "https://i.imgur.com/0DasRSp.jpg",
+            "https://i.imgur.com/j92BFeO.png",
+            "https://i.imgur.com/jMsr4eS.jpg",
+            "https://i.imgur.com/6HtLtDN.jpg",
+            "https://i.imgur.com/pSRSX9W.jpg"
+        ]
+    },
+
+    "sabretc": {
+        "des": "9-тилитровый двигатель V8 с турбонаддувом, пятиступенчатая коробка передач, задний привод, уникальный выхлоп, низкое сцепление задних шин и очень мягкая подвеска.",
+        "img": [
+            "https://i.imgur.com/GB2DGDx.jpg",
+            "https://i.imgur.com/TIdImV3.jpg",
+            "https://i.imgur.com/V3rdkjk.jpg",
+            "https://i.imgur.com/BBlSDng.jpg",
+            "https://i.imgur.com/KBZPljy.jpg",
+            "https://i.imgur.com/zm0ffni.jpg",
+            "https://i.imgur.com/S3LjJDB.jpg",
+            "https://i.imgur.com/KpBnaUL.jpg",
+            "https://i.imgur.com/yA55tKX.jpg"
+        ]
+    },
+
+    "sanchez": {
+        "des": "Кроссовый мотоцикл. Практичный, быстрый, лёгкий.",
+        "img": [
+            "https://i.imgur.com/5UFZ7Jg.jpg",
+            "https://i.imgur.com/x1DSJFg.jpg",
+            "https://i.imgur.com/LqQSleO.png",
+            "https://i.imgur.com/2Obeorc.png"
+        ]
+    },
+
+    "sblazer": {
+        "img": [
+            "https://i.imgur.com/B3I6Za7.jpg",
+            "https://i.imgur.com/fx5OMP7.jpg",
+            "https://i.imgur.com/4wwkQ8V.jpg",
+            "https://i.imgur.com/yTIFLkU.jpg",
+            "https://i.imgur.com/ggK5bnH.jpg",
+            "https://i.imgur.com/mcWsdAt.jpg",
+            "https://i.imgur.com/4cd4tU5.jpg",
+            "https://i.imgur.com/E8B0ODd.jpg",
+            "https://i.imgur.com/JtoJz2u.jpg",
+            "https://i.imgur.com/V1Z7ySw.jpg"
+        ]
+    },
+
+    "schafter": {
+        "img": [
+            "https://i.imgur.com/eeqcOsr.jpg"
+        ]
+    },
+
+    "sentinelxs": {
+        "des": "Спортивный автомобиль. Быстрый, мощный. Двигатель V8.",
+        "img": [
+            "https://i.imgur.com/1V3w5NQ.jpg",
+            "https://i.imgur.com/SiQJJcw.jpg",
+            "https://i.imgur.com/baenFfz.jpg",
+            "https://i.imgur.com/1VOHJNG.jpg",
+            "https://i.imgur.com/6WLd3JG.jpg",
+            "https://i.imgur.com/RkdbUa4.jpg",
+            "https://i.imgur.com/ijt8Ima.jpg",
+            "https://i.imgur.com/vTuARfr.jpg",
+            "https://i.imgur.com/4XxbO5F.jpg"
+        ]
+    },
+
+    "seven": {
+        "des": "2-хдверное купе. Имеет высокую максимальную скорость, шестиступенчатую коробку передач и двигатель V8.",
+        "img": [
+            "https://i.imgur.com/rVsFcSy.jpg",
+            "https://i.imgur.com/6bkZQJI.jpg",
+            "https://i.imgur.com/PSbZBTu.jpg",
+            "https://i.imgur.com/e6nOHzi.jpg",
+            "https://i.imgur.com/hOjvON0.jpg",
+            "https://i.imgur.com/lncsK5V.jpg",
+            "https://i.imgur.com/3VJMEyN.jpg",
+            "https://i.imgur.com/kUoOeMR.jpg"
+        ]
+    },
+
+    "sultan": {
+        "des": "4-хдверный автомобиль. Имеет небольшой, но очень мощный двигатель с турбонаддувом. По своей скорости является самым быстрым четырехдверным автомобилем в SA",
+        "img": [
+            "https://i.imgur.com/7Bc5red.jpg",
+            "https://i.imgur.com/fQcL9fk.png"
+        ]
+    },
+
+    "sultanrs": {
+        "des": "2-хдверное купе. Имеет быстрый разгон, скорость, хорошее сцепление, 6-тицилиндровый двигатель 3.5L.",
+        "img": [
+            "http://i.yapx.ru/BzuvP.gif",
+            "https://i.imgur.com/YN82upJ.jpg",
+            "https://i.imgur.com/k3Peul5.jpg",
+            "https://i.imgur.com/K6Wo1Mw.jpg",
+            "https://i.imgur.com/4eApNP4.jpg",
+            "https://i.imgur.com/XQmodUU.jpg"
+        ]
+    },
+
+    "superd": {
+        "des": "4-хдверный седан класса «люкс».",
+        "img": [
+            "https://i.imgur.com/eDfq3qY.jpg",
+            "https://i.imgur.com/Nsl4HZa.jpg"
+        ]
+    },
+
+    "tampad": {
+        "des": "2-хместный,  полноприводный, ширококузовный, низкий дрифт-маслкар. Чрезвычайно высокая максимальная скорость. Имеет четырёхступенчатую коробку передач, двигатель V8.",
+        "img": [
+            "http://i.yapx.ru/Bz0uI.gif",
+            "https://i.imgur.com/1RyoQec.png",
+            "https://i.imgur.com/SgIlVPV.jpg"
+        ]
+    },
+
+    "tampa": {
+        "des": "2-хместный маслкар. Имеет достаточно хорошее ускорение, неплохое управление и хорошо входит в повороты.",
+        "img": [
+            "https://i.imgur.com/OvedumP.jpg",
+            "https://i.imgur.com/YSWfNm2.jpg",
+            "https://i.imgur.com/6cbV8hf.jpg",
+            "https://i.imgur.com/GN8xcMT.jpg",
+            "https://i.imgur.com/lpGy84e.jpg",
+            "https://i.imgur.com/10R10fK.jpg",
+            "https://i.imgur.com/VJJCKFi.jpg"
+        ]
+    },
+
+    "tornadorr": {
+        "img": [
+            "https://i.imgur.com/teaPKLR.jpg",
+            "https://i.imgur.com/jTN0Dvu.jpg",
+            "https://i.imgur.com/TS5fzsu.png",
+            "https://i.imgur.com/P5SCIrs.jpg"
+        ]
+    },
+
+    "turismor": {
+        "des": "2-хдверный суперкар. Отлично управляется и разгоняется. Один из суперкаров с самой низкой посадкой.",
+        "img": [
+            "https://i.imgur.com/jfXgPY0.jpg",
+            "https://i.imgur.com/YKBcfQU.jpg"
+        ]
+    },
+
+    "tyrus": {
+        "des": "Суперкар-болид для 24-часовых гонок. Имеет по умолчанию спонсорскую раскраску от Debonaire и дополнительную от Fukaru. Отличный разгон, сцепление и высокая максимальная скорость.",
+        "img": [
+            "https://i.imgur.com/lWsFio2.jpg",
+            "https://i.imgur.com/VNbdS7P.png"
+        ]
+    },
+
+    "vacca": {
+        "img": [
+            "https://i.imgur.com/jSOIPGe.jpg",
+            "https://i.imgur.com/ELlUxDc.jpg",
+            "https://i.imgur.com/k6cwrqV.jpg"
+        ]
+    },
+
+    "windsor": {
+        "img": [
+            "https://i.imgur.com/X9LsQyI.jpg",
+            "https://i.imgur.com/uVp7hgf.jpg",
+            "https://i.imgur.com/EGx3M8T.jpg",
+            "https://i.imgur.com/Orm5Clq.jpg",
+            "https://i.imgur.com/ntGilDB.jpg",
+            "https://i.imgur.com/AEIXb0O.png",
+            "https://i.imgur.com/XJZdEME.jpg"
+        ]
+    },
+
+    "windsord": {
+        "img": [
+            "https://i.imgur.com/JI8zDx7.jpg",
+            "https://i.imgur.com/pgE5uui.jpg",
+            "https://i.imgur.com/Ek0KcyK.jpg",
+            "https://i.imgur.com/l1aXywf.jpg",
+            "https://i.imgur.com/chX4hgl.jpg",
+            "https://i.imgur.com/M3JOsX0.jpg",
+            "https://i.imgur.com/JvRFfwK.jpg"
+        ]
+    },
+
+    "xa": {
+        "des": "Самый быстрый суперкар.",
+        "img": [
+            "https://i.imgur.com/ChT76YZ.jpg",
+            "https://i.imgur.com/kTI7TKr.png",
+            "https://i.imgur.com/faf41x8.jpg",
+            "https://i.imgur.com/YIA8flw.jpg",
+            "https://i.imgur.com/ypmsGjw.jpg",
+            "https://i.imgur.com/3ZdYbfz.jpg",
+            "https://i.imgur.com/R0L3D0N.jpg",
+            "https://i.imgur.com/Po8hw7M.jpg",
+            "https://i.imgur.com/yQ3QREt.jpg",
+            "https://i.imgur.com/6xXRr0l.jpg",
+            "https://i.imgur.com/oiAX11T.jpg",
+            "https://i.imgur.com/HCApz3p.jpg",
+            "https://i.imgur.com/26ekZdi.jpg",
+            "https://i.imgur.com/7sGaIs4.jpg",
+            "https://i.imgur.com/SIEPc2a.jpg",
+            "https://i.imgur.com/t08Qgs6.jpg",
+            "https://i.imgur.com/FtEYmLm.jpg",
+            "https://i.imgur.com/9lzfU75.jpg",
+            "https://i.imgur.com/h4xgMqk.jpg"
+        ]
+    }
+}

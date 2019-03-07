@@ -1,0 +1,508 @@
+{
+    "s2": {
+        "n2": {
+            "numbiz": "/biz №02",
+            "namebiz": "Central Los Santos Customs",
+            "thumbnailbiz": [
+                "https://i.imgur.com/8VEUAIP.png",
+                "https://i.imgur.com/kDbC6uE.png",
+                "https://i.imgur.com/iB5cgAj.png"
+            ],
+            "imagebiz": "https://i.imgur.com/WecRAJ5.jpg",
+            "colorbiz": "#01F0F5",
+            "des": "Для тех кто любит свой автомобиль. Топливо премиум класса! Удобный подъезд! Топливо всегда в наличии!",
+            "citybiz": "Los Santos (возле EMS)"
+        },
+
+        "n7": {
+            "numbiz": "/biz №07",
+            "namebiz": "Магазин 24/7",
+            "thumbnailbiz": [
+                "https://i.imgur.com/ue6TvaC.png",
+                "https://i.imgur.com/e9jvadD.png"
+            ],
+            "des": "Приезжай, закупись и в лучших ценах убедись!",
+            "colorbiz": "#007C00",
+            "citybiz": "Los Santos (центр)"
+        },
+        
+        "n8": {
+            "numbiz": "/biz №08",
+            "namebiz": "Central Los Santos Customs",
+            "thumbnailbiz": [
+                "https://i.imgur.com/gFyjR9j.jpg",
+                "https://i.imgur.com/836b7NJ.jpg",
+                "https://i.imgur.com/Kn0hUC7.png",
+                "https://i.imgur.com/NGnk2e5.png",
+                "https://i.imgur.com/rFralSw.jpg"
+            ],
+            "imagebiz": "https://i.imgur.com/gmxNB86.jpg",
+            "des": "CLSC - это автомастерская, занимающаяся ремонтом, покраской и установкой тюнинга на автомобили и мотоциклы разного класса. Здесь вы можете поставить шины достойные вашего маслкара или движок, который полностью раскроет потенциал вашего спорткара. А может быть вы отчаянный байкер? Тогда и для вашего чоппера у нас нас найдётся прочный бак и роскошная вилка.",
+            "colorbiz": "#201C5B",
+            "citybiz": "Los Santos (на севере)"
+        },
+
+        "n9": {
+            "numbiz": "/biz №09",
+            "namebiz": "Globe oil",
+            "thumbnailbiz": "https://i.imgur.com/rzFMcts.png",
+            "imagebiz": "https://i.imgur.com/Ee4DGJG.jpg",
+            "des": "Предлагаю дополнительный заработок для водителей. Выплачиваю по :two::heavy_dollar_sign: за каждый залитый литр в гос. транспорт. Напомню, вы заправляетесь бесплатно за счёт государства. Выгодно для начинающих. \r\nТак же имеется выгодное предложение для дальнобойщиков нашего сервера. Чаще и больше заливаетесь - чаще тут появляются заказы на нашу заправку.",
+            "colorbiz": "#9D101B",
+            "citybiz": "Los Santos (возле DMV)"
+        },
+
+        "n10": {
+            "numbiz": "/biz №10",
+            "namebiz": "Limited LTD Gasoline",
+            "thumbnailbiz": [
+                "https://i.imgur.com/8VWTnfw.png",
+                "https://i.imgur.com/t7grZ2h.png"
+            ],
+            "imagebiz": "https://i.imgur.com/ccl0ZAR.jpg",
+            "des": ":fire:САМАЯ ЛУЧШАЯ ЗАПРАВКА ШТАТА:fire: \r\n:umbrella2:МЫ НАХОДИМСЯ РЯДОМ С КЛУБОМ BALLAS :umbrella2: \r\n:slot_machine:Самая низкая цена на бензин :fuelpump: во всем штате :trophy: \r\n:motorway:Экономьте ваше время и деньги на нашей заправке :motorway: \r\n:moneybag:Удобное расположение,самый качественный бензин,низкая цена :moneybag: \r\n:gem:ВСЕ ЭТО ПРЯМО В ЦЕНТРЕ НАШЕГО ШТАТА :gem: \r\nРАБОТНИКАМ ГОС. СТРУКТУР ОПЛАТА БЕНЗИНА ЗА СЧЁТ ГОСУДАРСТВА (такси,медики,автобусы,полиция,автошкола) \r\n:gift:Приятных поездок :shopping_bags:.",
+            "colorbiz": "#232959",
+            "citybiz": "Los Santos (возле балас)"
+        },
+
+        "n13": {
+            "numbiz": "/biz №13",
+            "namebiz": "Sandy's Gas Station",
+            "thumbnailbiz": "https://i.imgur.com/PBVb3kG.png",
+            "imagebiz": "https://i.imgur.com/cfWM7c0.gif",
+            "des": "Предлагаю дополнительный заработок для водителей. Выплачиваю по 2$ за каждый залитый литр в гос. транспорт. Напомню, вы заправляетесь бесплатно за счёт государства. Выгодно для начинающих. Так же имеется выгодное предложение для дальнобойщиков нашего сервера. Чаще и больше заливаетесь - чаще тут появляются заказы на нашу заправку.",
+            "colorbiz": "#DBBD1A",
+            "citybiz": "Sandy Shores (центр)"
+        },
+
+        "n15": {
+            "numbiz": "/biz №15",
+            "namebiz": "Магазин 24/7",
+            "thumbnailbiz": [
+                "https://i.imgur.com/ue6TvaC.png",
+                "https://i.imgur.com/e9jvadD.png"
+            ],
+            "imagebiz": [
+                "http://i.yapx.ru/BRBeC.gif",
+                "https://i.imgur.com/k7B22U7.jpg"
+            ],
+            "des": ":convenience_store: Мы ждём вас! :convenience_store: \r\n:money_with_wings: Самые низкие цены в штате! :money_with_wings: \r\n:shopping_cart: Товар всегда в наличии! :shopping_cart:",
+            "colorbiz": "#007C00",
+            "citybiz": "Tataviam Truckstop (восточнее города Los-Santos)"
+        },
+
+        "n16": {
+            "numbiz": "/biz №16",
+            "namebiz": "Магазин 24/7",
+            "thumbnailbiz": [
+                "https://i.imgur.com/ue6TvaC.png",
+                "https://i.imgur.com/e9jvadD.png"
+            ],
+            "colorbiz": "#007C00",
+            "citybiz": "Sandy Shores (центр)"
+        },
+
+        "n24": {
+            "numbiz": "/biz №24",
+            "namebiz": "Sandy Shores Customs",
+            "thumbnailbiz": [
+                "https://i.imgur.com/gFyjR9j.jpg",
+                "https://i.imgur.com/836b7NJ.jpg",
+                "https://i.imgur.com/Kn0hUC7.png",
+                "https://i.imgur.com/NGnk2e5.png",
+                "https://i.imgur.com/rFralSw.jpg"
+            ],
+            "imagebiz": "https://i.imgur.com/Z6sKQoD.png",
+            "des": "**Автомастерская в Сэнди-Шорс:** \r\n-Самые низкие цены в штате \r\n-Детали всегда в наличии \r\n-Постоянные скидки",
+            "colorbiz": "#201C5B",
+            "citybiz": "Sandy Shores (напротив банка)"
+        },
+      
+        "n25": {
+            "numbiz": "/biz №25",
+            "namebiz": "Автосалон",
+            "thumbnailbiz": "https://i.imgur.com/mjvkJ4J.png",
+            "imagebiz": "https://i.imgur.com/HMcqa3O.jpg",
+            "des": "Самые низкие цены!",
+            "colorbiz": "#FFFF00",
+            "citybiz": "Sandy Shores"
+        },
+
+        "n26": {
+            "numbiz": "/biz №26",
+            "namebiz": "RON oil LS",
+            "thumbnailbiz": [
+                "https://i.imgur.com/Vbwlv0v.png",
+                "https://i.imgur.com/O8yKzKG.png"
+            ],
+            "imagebiz": "https://i.imgur.com/mp7Xjuz.jpg",
+            "des": "Самые маленькие цены на бензин во всем Лос-Сантосе. Работаем 24/7. Бензин всегда в наличии.",
+            "colorbiz": "#E46C0B",
+            "citybiz": "Los Santos (возле ПД2)"
+        },
+
+        "n28": {
+            "numbiz": "/biz №28",
+            "namebiz": "RON oil",
+            "thumbnailbiz": [
+                "https://i.imgur.com/Vbwlv0v.png",
+                "https://i.imgur.com/O8yKzKG.png"
+            ],
+            "imagebiz": "https://i.imgur.com/544E4Nv.jpg",
+            "des": "Предлагаю выгодный дополнительный заработок для водителей. Выплачиваю по 2 доллара за каждый 1 литр который вы заливаете в государственный транспорт. Например если вы зальете в транспорт 360 литров то вы получаете 720 долларов. Следовательно, чем больше заправляетесь, тем больше денег и получаете. Напомню вы заправляете государственный транспорт бесплатно за счёт государства. Точно так же вы можете заправить ваш личный транспорт. Получиться, что вы заправились за 4 доллара за 1 литр и это очень выгодно.",
+            "colorbiz": "#E46C0B",
+            "citybiz": "Chumash (южнее армии)"
+        },
+
+        "n30": {
+            "numbiz": "/biz №30",
+            "namebiz": "RON oil LS",
+            "thumbnailbiz": [
+                "https://i.imgur.com/Vbwlv0v.png",
+                "https://i.imgur.com/O8yKzKG.png"
+            ],
+            "colorbiz": "#E46C0B",
+            "imagebiz": "https://i.imgur.com/bMxR3l3.png",
+            "citybiz": "Los Santos (АЗС с забром)"
+        },
+
+        "n43": {
+            "numbiz": "/biz №43",
+            "namebiz": "Los Santos Customs",
+            "thumbnailbiz": [
+                "https://i.imgur.com/gFyjR9j.jpg",
+                "https://i.imgur.com/836b7NJ.jpg",
+                "https://i.imgur.com/Kn0hUC7.png",
+                "https://i.imgur.com/NGnk2e5.png",
+                "https://i.imgur.com/rFralSw.jpg"
+            ],
+            "imagebiz": "https://i.imgur.com/xdEdFv9.jpg",
+            "colorbiz": "#201C5B",
+            "des": "Приезжайте мы рады каждому новому клиенту!",
+            "citybiz": "Los Santos (возле аэропорта)"
+        },
+
+        "n44": {
+            "numbiz": "/biz №44",
+            "namebiz": "Beeker's Garage",
+            "thumbnailbiz": [
+                "https://i.imgur.com/dt5fWJ7.png",
+                "https://i.imgur.com/l7Optod.jpg"
+            ],
+            "imagebiz": "https://i.imgur.com/Cof1QBd.gif",
+            "colorbiz": "#008000",
+            "des": ":moneybag:Детали прямо из Германии, Японии, Англии на все виды марок машин. \r\n:credit_card:Цены на все детали самые низкие в штате. \r\n:tada: Будем рады всем.:tada:",
+            "citybiz": "Paleto Bay"
+        },
+      
+        "n51": {
+            "namebiz": "Helmut's European Autos.",
+            "thumbnailbiz": "https://i.imgur.com/W9DXBRf.png",
+            "colorbiz": "#A52A2A",
+            "des": "Лучшие цены в штате!",
+            "citybiz": "Paleto Bay"
+        },
+
+        "n54": {
+            "numbiz": "/biz №54",
+            "namebiz": "Beach Comb Over Barber",
+            "thumbnailbiz": "https://i.imgur.com/Ba6S5nC.png",
+            "imagebiz": "http://i.yapx.ru/BTYLV.gif",
+            "colorbiz": "#FF0000",
+            "des": "Парикмахерская, расположенная на проспекте Магеллана в Веспуччи, Лос-Сантос. \r\n:100: Лучшие мастера и низкие цены! :100: \r\n:alarm_clock: Работаем 24/7! :alarm_clock:",
+            "citybiz": "Los Santos (возле пляжа)"
+        },
+        
+        "n55": {
+            "namebiz": "Барбер и салн красоты Bob Mulét",
+            "thumbnailbiz": [
+                "https://i.imgur.com/xdC7PQA.jpg",
+                "https://i.imgur.com/RgC8l37.png"
+            ],
+            "imagebiz": "https://i.imgur.com/NQDp6jK.jpg",
+            "colorbiz": "#FFD700",
+            "des": "Лучшие специалисты штата! \r\n:Мы ценим ваше время и деньги! \r\nПриезжай, преобразись и в этом убедись!",
+            "citybiz": "Los Santos (возле здания суда)"
+        },
+
+        "n69": {
+            "numbiz": "/biz №69",
+            "namebiz": "Los Santos Tattoos",
+            "thumbnailbiz": "https://i.imgur.com/dO8LtZB.png",
+            "imagebiz": "https://i.imgur.com/dO8LtZB.png",
+            "colorbiz": "BLACK",
+            "citybiz": "Los Santos (El-Burro-Heights, возле дальнобойщиков)"
+        },
+
+        "n70": {
+            "numbiz": "/biz №70",
+            "namebiz": "Blazing Tattoo",
+            "thumbnailbiz": "https://i.imgur.com/WzCfBXF.jpg",
+            "imagebiz": "https://i.imgur.com/oUIK8zT.jpg",
+            "colorbiz": "BLACK",
+            "citybiz": "Los Santos (Vinewood)"
+        },
+
+        "n71": {
+            "numbiz": "/biz №71",
+            "namebiz": "Tattoo Studio The Pit",
+            "thumbnailbiz": "https://i.imgur.com/hABsRJr.png",
+            "imagebiz": "https://i.imgur.com/jBpATLw.png",
+            "colorbiz": "BLACK",
+            "des": "Все услуги нашей студии оказываются профессионалами и с помощью современного оборудования. Мастера с большим и разнообразным портфолио, а так же низкие цены. Мы находимся рядом с пляжем \"Vespucci\".",
+            "citybiz": "Los Santos (рядом с пляжем)"
+        },
+
+        "bpb": {
+            "namebiz": "Herr Kutz Barber",
+            "thumbnailbiz": "https://i.imgur.com/JGZnTSI.jpg",
+            "imagebiz": "https://i.imgur.com/Jx6QuTC.gif",
+            "colorbiz": "#C3912E",
+            "des": "**Приглашаем всех желающих в наш Барбершоп!** \r\n-Самые низкие цены!!! \r\n-Здесь вас ждут: лучшие парикмахеры города, отзывчивая администрация и самый дружелюбный персонал. \r\n-Мы находимся в Палето-Бэй рядом с автосалоном",
+            "citybiz": "Paleto Bay"
+        }
+    },
+    "s1": {
+        "n2": {
+            "numbiz": "/biz №02",
+            "namebiz": "Central Los Santos Customs",
+            "thumbnailbiz": [
+                "https://i.imgur.com/8VEUAIP.png",
+                "https://i.imgur.com/kDbC6uE.png",
+                "https://i.imgur.com/iB5cgAj.png"
+            ],
+            "colorbiz": "#01F0F5",
+            "des": "Для тех кто любит свой автомобиль. Топливо премиум класса! Удобный подъезд! Топливо всегда в наличии!",
+            "citybiz": "Los Santos (возле EMS)"
+        },
+
+        "n7": {
+            "numbiz": "/biz №07",
+            "namebiz": "Магазин 24/7",
+            "thumbnailbiz": [
+                "https://i.imgur.com/ue6TvaC.png",
+                "https://i.imgur.com/e9jvadD.png"
+            ],
+            "imagebiz": "https://i.imgur.com/UDaLwbB.jpg",
+            "des": "Приезжай, закупись и в лучших ценах убедись!",
+            "colorbiz": "#007C00",
+            "citybiz": "Los Santos (центр)"
+        },
+        
+        "n8": {
+            "numbiz": "/biz №08",
+            "namebiz": "Central Los Santos Customs",
+            "thumbnailbiz": [
+                "https://i.imgur.com/gFyjR9j.jpg",
+                "https://i.imgur.com/836b7NJ.jpg",
+                "https://i.imgur.com/Kn0hUC7.png",
+                "https://i.imgur.com/NGnk2e5.png",
+                "https://i.imgur.com/rFralSw.jpg"
+            ],
+            "imagebiz": "https://i.imgur.com/gmxNB86.jpg",
+            "des": "CLSC - это автомастерская, занимающаяся ремонтом, покраской и установкой тюнинга на автомобили и мотоциклы разного класса. Здесь вы можете поставить шины достойные вашего маслкара или движок, который полностью раскроет потенциал вашего спорткара. А может быть вы отчаянный байкер? Тогда и для вашего чоппера у нас нас найдётся прочный бак и роскошная вилка.",
+            "colorbiz": "#201C5B",
+            "citybiz": "Los Santos (на севере)"
+        },
+
+        "n9": {
+            "numbiz": "/biz №09",
+            "namebiz": "Globe oil",
+            "thumbnailbiz": "https://i.imgur.com/rzFMcts.png",
+            "colorbiz": "#9D101B",
+            "citybiz": "Los Santos (возле DMV)"
+        },
+
+        "n10": {
+            "numbiz": "/biz №10",
+            "namebiz": "Limited LTD Gasoline",
+            "thumbnailbiz": [
+                "https://i.imgur.com/8VWTnfw.png",
+                "https://i.imgur.com/t7grZ2h.png"
+            ],
+            "colorbiz": "#232959",
+            "citybiz": "Los Santos (возле балас)"
+        },
+
+        "n13": {
+            "numbiz": "/biz №13",
+            "namebiz": "Sandy's Gas Station",
+            "thumbnailbiz": "https://i.imgur.com/PBVb3kG.png",
+            "colorbiz": "#DBBD1A",
+            "citybiz": "Sandy Shores (центр)"
+        },
+
+        "n15": {
+            "numbiz": "/biz №15",
+            "namebiz": "Магазин 24/7",
+            "thumbnailbiz": [
+                "https://i.imgur.com/ue6TvaC.png",
+                "https://i.imgur.com/e9jvadD.png"
+            ],
+            "colorbiz": "#007C00",
+            "citybiz": "Tataviam Truckstop (восточнее города Los-Santos)"
+        },
+
+        "n16": {
+            "numbiz": "/biz №16",
+            "namebiz": "Магазин 24/7",
+            "thumbnailbiz": [
+                "https://i.imgur.com/ue6TvaC.png",
+                "https://i.imgur.com/e9jvadD.png"
+            ],
+            "imagebiz": "https://i.imgur.com/C1PyrY9.jpg",
+            "colorbiz": "#007C00",
+            "citybiz": "Sandy Shores (центр)"
+        },
+
+        "n24": {
+            "numbiz": "/biz №24",
+            "namebiz": "Sandy Shores Customs",
+            "thumbnailbiz": [
+                "https://i.imgur.com/gFyjR9j.jpg",
+                "https://i.imgur.com/836b7NJ.jpg",
+                "https://i.imgur.com/Kn0hUC7.png",
+                "https://i.imgur.com/NGnk2e5.png",
+                "https://i.imgur.com/rFralSw.jpg"
+            ],
+            "colorbiz": "#201C5B",
+            "citybiz": "Sandy Shores (напротив банка)"
+        },
+      
+        "n25": {
+            "numbiz": "/biz №25",
+            "namebiz": "Автосалон",
+            "thumbnailbiz": "https://i.imgur.com/mjvkJ4J.png",
+            "imagebiz": "https://i.imgur.com/HMcqa3O.jpg",
+            "des": "Самые низкие цены!",
+            "colorbiz": "#FFFF00",
+            "citybiz": "Sandy Shores"
+        },
+
+        "n26": {
+            "numbiz": "/biz №26",
+            "namebiz": "RON oil LS",
+            "thumbnailbiz": [
+                "https://i.imgur.com/Vbwlv0v.png",
+                "https://i.imgur.com/O8yKzKG.png"
+            ],
+            "colorbiz": "#E46C0B",
+            "citybiz": "Los Santos (возле ПД2)"
+        },
+
+        "n28": {
+            "numbiz": "/biz №28",
+            "namebiz": "RON oil",
+            "thumbnailbiz": [
+                "https://i.imgur.com/Vbwlv0v.png",
+                "https://i.imgur.com/O8yKzKG.png"
+            ],
+            "colorbiz": "#E46C0B",
+            "citybiz": "Chumash (южнее армии)"
+        },
+
+        "n30": {
+            "numbiz": "/biz №30",
+            "namebiz": "RON oil LS",
+            "thumbnailbiz": [
+                "https://i.imgur.com/Vbwlv0v.png",
+                "https://i.imgur.com/O8yKzKG.png"
+            ],
+            "colorbiz": "#E46C0B",
+            "imagebiz": "https://i.imgur.com/8Tl2LN6.jpg",
+            "citybiz": "Los Santos (АЗС с забром)"
+        },
+
+        "n43": {
+            "numbiz": "/biz №43",
+            "namebiz": "Los Santos Customs",
+            "thumbnailbiz": [
+                "https://i.imgur.com/gFyjR9j.jpg",
+                "https://i.imgur.com/836b7NJ.jpg",
+                "https://i.imgur.com/Kn0hUC7.png",
+                "https://i.imgur.com/NGnk2e5.png",
+                "https://i.imgur.com/rFralSw.jpg"
+            ],
+            "colorbiz": "#201C5B",
+            "des": "Приезжайте мы рады каждому новому клиенту!",
+            "citybiz": "Los Santos (возле аэропорта)"
+        },
+
+        "n44": {
+            "numbiz": "/biz №44",
+            "namebiz": "Beeker's Garage",
+            "thumbnailbiz": [
+                "https://i.imgur.com/dt5fWJ7.png",
+                "https://i.imgur.com/l7Optod.jpg"
+            ],
+            "colorbiz": "#008000",
+            "des": ":moneybag:Детали прямо из Германии, Японии, Англии на все виды марок машин. \r\n:credit_card:Цены на все детали самые низкие в штате. \r\n:tada: Будем рады всем.:tada:",
+            "citybiz": "Paleto Bay"
+        },
+      
+        "n51": {
+            "namebiz": "Автосалон среднего класса.",
+            "thumbnailbiz": "https://i.imgur.com/W9DXBRf.png",
+            "imagebiz": "https://i.imgur.com/CBUz1QD.jpg",
+            "colorbiz": "#A52A2A",
+            "des": "Лучшие цены в штате!",
+            "citybiz": "Paleto Bay"
+        },
+
+        "n54": {
+            "numbiz": "/biz №54",
+            "namebiz": "Beach Comb Over Barber",
+            "thumbnailbiz": "https://i.imgur.com/Ba6S5nC.png",
+            "imagebiz": "https://i.imgur.com/zWT4tbv.jpg",
+            "colorbiz": "#FF0000",
+            "des": "Мы создаём стиль и настоение за умеренное вознагрождение!",
+            "citybiz": "Los Santos (возле пляжа)"
+        },
+      
+        "n55": {
+            "namebiz": "Барбер и салн красоты Bob Mulét",
+            "thumbnailbiz": [
+                "https://i.imgur.com/xdC7PQA.jpg",
+                "https://i.imgur.com/RgC8l37.png"
+            ],
+            "colorbiz": "#FFD700",
+            "des": "Лучшие специалисты штата! \r\n:Мы ценим ваше время и деньги! \r\nПриезжай, преобразись и в этом убедись!",
+            "citybiz": "Los Santos (возле здания суда)"
+        },
+
+        "n69": {
+            "numbiz": "/biz №69",
+            "namebiz": "Los Santos Tattoos",
+            "colorbiz": "BLACK",
+            "citybiz": "Los Santos (El-Burro-Heights, возле дальнобойщиков)"
+        },
+
+        "n70": {
+            "numbiz": "/biz №70",
+            "namebiz": "Blazing Tattoo",
+            "thumbnailbiz": "https://i.imgur.com/WzCfBXF.jpg",
+            "imagebiz": "https://i.imgur.com/IlDRsir.png",
+            "colorbiz": "BLACK",
+            "des": "Низкие цены и лучшие тату мастера! Приходи и забивайся!",
+            "citybiz": "Los Santos (Vinewood)"
+        },
+
+        "n71": {
+            "numbiz": "/biz №71",
+            "namebiz": "Tattoo Studio The Pit",
+            "thumbnailbiz": "https://i.imgur.com/hABsRJr.png",
+            "colorbiz": "BLACK",
+            "des": "Все услуги нашей студии оказываются профессионалами и с помощью современного оборудования. Мастера с большим и разнообразным портфолио, а так же низкие цены. Мы находимся рядом с пляжем \"Vespucci\".",
+            "citybiz": "Los Santos (рядом с пляжем)"
+        },
+
+        "bpb": {
+            "namebiz": "Herr Kutz Barber",
+            "thumbnailbiz": "https://i.imgur.com/JGZnTSI.jpg",
+            "imagebiz": "https://i.imgur.com/Jx6QuTC.gif",
+            "colorbiz": "#C3912E",
+            "des": "**Приглашаем всех желающих в наш Барбершоп!** \r\n-Самые низкие цены!!! \r\n-Здесь вас ждут: лучшие парикмахеры города, отзывчивая администрация и самый дружелюбный персонал. \r\n-Мы находимся в Палето-Бэй рядом с автосалоном",
+            "citybiz": "Paleto Bay"
+        }
+    }
+}
