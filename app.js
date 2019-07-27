@@ -101,7 +101,7 @@ function randomStatus() {
     let status = [`/help | Серверов: ${client.guilds.size}`,`${client.guilds.reduce((mem, g) => mem += g.memberCount, 0)} пользователей`]
     let rstatus = Math.floor(Math.random() * status.length);
     client.user.setPresence({ game: { name: status[rstatus], type: "LISTENING"}});
-}; setInterval(randomStatus, 30000)
+}; setInterval(randomStatus, 60000)
 
 
 async function statusVmpAlpha() {

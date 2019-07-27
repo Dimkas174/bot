@@ -13,7 +13,8 @@ const Discord = require('discord.js'),
       got = require('got'),
       cheerio = require('cheerio'),
       superfetch = require('node-superfetch'),
-      request = require('request');
+      request = require('request'),
+      db = require('quick.db');
 
 function getText(children) {
     if (children.children) return getText(children.children);
@@ -93,6 +94,8 @@ module.exports = async (client, message) => {
     const gunGosShotgun = /(?:(?:sweeper|heavy|тяжелы(?:е|й|х)|assault|штурмов(?:ой|ы(?:е|х))|двухствольны(?:й|е|х)|bullpup|double ?barrel) ?(?:shotgun|дроб(?:аш(?:а|ей|и)?|овик(?:а|и|ов)?)|автомат(?:ов|ы)?)|двухстволк(?:а|и|у))/gi;
     const author = message.author;
 
+    const phone1 = await db.fetch(`phone1_${message.guild.id}_${message.author.id}`);
+    const phone2 = await db.fetch(`phone2_${message.guild.id}_${message.author.id}`);
 
     // 👍 под ссылками YT, YTG и Twitch
     if (message.content.match(uriRegexp)) {  
@@ -137,297 +140,422 @@ module.exports = async (client, message) => {
 
     // 👍 под ссылками jpg, png
     } else if (message.content.match(linkImg)) {  
-        if (!message.content.match(/прода(?:м|ю)|(по)?куп(?:аю|лю)|обменяю|1\)/gi)) return;
-        setTimeout(() => message.delete(), 1000);
-        const img = message.content.match(linkImg)[0];
-        const text = message.content.replace(linkImg, "");
+        if (message.channel.id === '548500621049987122' || message.channel.id === '548500690826166296' || message.channel.id === '548500737534197760' || 
+            message.channel.id === '548500799706234901' || message.channel.id === '548500868186767391' || message.channel.id === '548500926915149854' || 
+            message.channel.id === '548393945516998677' || message.channel.id === '548394064379248660' || message.channel.id === '548394113373044749' || 
+            message.channel.id === '548394178124709900' || message.channel.id === '548394244839309313' || message.channel.id === '548394288267132929') {
+          
+            setTimeout(() => message.delete(), 2000);
+          
+            let ginterval1 = await db.fetch(`ginterval1_${message.guild.id}_${message.channel.id}`);
+            if (ginterval1 == null) ginterval1 = 0;
 
-        let embed = new Discord.RichEmbed()
-
-        if (message.content.match(/красн(?:о|ый)|red/i)) { 
-            embed.setColor('0xFF0000')
-        } else if (message.content.match(/ч(?:е|ё)рн(?:о|ый)|black/i)) {
-            embed.setColor('0x000000')
-        } else if (message.content.match(/сер(?:о|ый)|gray/i)) {
-            embed.setColor('0x808080')
-        } else if (message.content.match(/серебрянн?(?:о|ый)|silver/i)) { 
-            embed.setColor('0xC0C0C0')
-        } else if (message.content.match(/бел(?:о|ый)|white/i)) {
-            embed.setColor('0xFFFFFF')
-        } else if (message.content.match(/розов(?:о|ый)|fuchsia/i)) {
-            embed.setColor('0xFF00FF')
-        } else if (message.content.match(/ж(?:о|ё|е)лт(?:о|ый)|yellow/i)) {
-            embed.setColor('0xFFFF00')
-        } else if (message.content.match(/зелён(?:о|ый)|green/i)) {
-            embed.setColor('0x008000')
-        } else if (message.content.match(/голубой?|aqua/i)) {
-            embed.setColor('0x00FFFF')
-        } else if (message.content.match(/син(?:е|ий)|blue/i)) {
-            embed.setColor('0x0000FF')
-        } else if (message.content.match(/коричнев(?:о|ый)|brown/i)) {
-            embed.setColor('0x8B4513')
+            let minterval1 = await db.fetch(`minterval1_${message.channel.id}_${message.author.id}`);
+            if (minterval1 == null) minterval1 = ginterval1;
+      
+            if (minterval1 > ginterval1) {
+              let pinterval = minterval1 - ginterval1
+              return message.reply(`Вы отправляете объявление слишком часто! Подождите **${pinterval}** объявлений от других участников!`).then(m => m.delete(30000));
+          
         } else {
-            embed.setColor('RANDOM')
-        }
+              
+            let img = message.content.match(linkImg)[0];
+                let text = message.content.replace(linkImg, "");
 
-        if (text.match(fl)) {
-            const fL = text.match(fl)[0];
-            embed.addField('Тема на форуме: ', '[Ссылка на форум (кликабельно)](' + fL + ')', true)
-        }
+                let embed = new Discord.RichEmbed()
 
-        if (text.match(/```(?:md|Markdown)/gi)) {
-            if (text.match(wH)) {
-                const textb = text.replace(wH, "");
-                if (textb.match(forumLink)) {
-                    const textbc = textb.replace(forumLink, "");
-                    embed.setDescription(wordTrans(textbc, dictionary))
+                if (message.content.match(/красн(?:о|ый)|red/i)) { 
+                    embed.setColor('0xFF0000')
+                } else if (message.content.match(/ч(?:е|ё)рн(?:о|ый)|black/i)) {
+                    embed.setColor('0x000000')
+                } else if (message.content.match(/сер(?:о|ый)|gray/i)) {
+                   embed.setColor('0x808080')
+                } else if (message.content.match(/серебрянн?(?:о|ый)|silver/i)) { 
+                   embed.setColor('0xC0C0C0')
+                } else if (message.content.match(/бел(?:о|ый)|white/i)) {
+                   embed.setColor('0xFFFFFF')
+                } else if (message.content.match(/розов(?:о|ый)|fuchsia/i)) {
+                   embed.setColor('0xFF00FF')
+                } else if (message.content.match(/ж(?:о|ё|е)лт(?:о|ый)|yellow/i)) {
+                   embed.setColor('0xFFFF00')
+                } else if (message.content.match(/зелён(?:о|ый)|green/i)) {
+                   embed.setColor('0x008000')
+                } else if (message.content.match(/голубой?|aqua/i)) {
+                   embed.setColor('0x00FFFF')
+                } else if (message.content.match(/син(?:е|ий)|blue/i)) {
+                   embed.setColor('0x0000FF')
+                } else if (message.content.match(/коричнев(?:о|ый)|brown/i)) {
+                   embed.setColor('0x8B4513')
+          
+                } else {
+                    let color = message.member.displayHexColor;
+                    if (color == '#000000') {
+                        color = 0x36393e;
+                    } else if (message.member.roles.find(r => r.name === "Администрация")) {
+                        embed.setColor('#FF6347')
+                    } else if (message.member.roles.find(r => r.name === "Модератор")) {
+                        embed.setColor('#008000')
+                    } else if (message.member.roles.find(r => r.name === "VIP")) {
+                        embed.setColor('#4caef1')
+                    } else if (color) {
+                        embed.setColor('RANDOM')
+                    } else if (message.member.roles.some(r=>["Барахольщик новичок", "Барахольщик", "Опытный барахольщик", "Продвинутый барахольщик"].includes(r.name)) ) {
+                        if (message.member.roles.find(r => r.name === "Модератор")) {
+                            embed.setColor('0x00FF00')
+                        } else {
+                            embed.setColor(0x36393e)
+                        }
+                    } else {
+                        embed.setColor(color)
+                    }
+                }
+
+                if (text.match(fl)) {
+                    let fL = text.match(fl)[0];
+                    embed.addField('Тема на форуме: ', '[Ссылка на форум (кликабельно)](' + fL + ')', true)
+                }
+
+                if (text.match(/```(?:md|Markdown)/gi)) {
+                    if (text.match(wH)) {
+                        let textb = text.replace(wH, "");
+                        if (textb.match(forumLink)) {
+                            let textbc = textb.replace(forumLink, "");
+                            embed.setDescription(wordTrans(textbc, dictionary))
+                        } else {
+                            embed.setDescription(wordTrans(text, dictionary))
+                        }
+                    } else {
+                        embed.setDescription(wordTrans(text, dictionary))
+                    }
+                } else if (text.match(/```/gi)) {
+                    let texta = text.replace(/```/gi, "");
+                    if (texta.match(wH)) {
+                        let textab = texta.replace(wH, "");
+                        if (textab.match(forumLink)) {
+                            let textabc = textab.replace(forumLink, "");
+                            embed.setDescription(wordTrans('```md\r\n' + textabc + '\r\n```', dictionary))
+                        } else {
+                            embed.setDescription(wordTrans('```md\r\n' + textab + '\r\n```', dictionary))
+                        }
+                    } else if (texta.match(forumLink)) {
+                        let textac = texta.replace(forumLink, "");
+                        embed.setDescription(wordTrans('```md\r\n' + textac + '\r\n```', dictionary))
+                    } else {
+                        embed.setDescription(wordTrans('```md\r\n' + texta + '\r\n```', dictionary))
+                    }
+                } else if (text.match(/\[|]/gi)) {
+                    if (text.match(wH)) {
+                        let textb = text.replace(wH, "");
+                        if (textb.match(forumLink)) {
+                            let textbc = textb.replace(forumLink, "");
+                            embed.setDescription(wordTrans('```md\r\n' + textbc + '\r\n```', dictionary))
+                        } else {
+                            embed.setDescription(wordTrans(text, dictionary))
+                        }
+                    } else if (text.match(forumLink)) {
+                        let textc = text.replace(forumLink, "");
+                        embed.setDescription(wordTrans('```md\r\n' + textc + '\r\n```', dictionary))
+                    } else {
+                        embed.setDescription(wordTrans('```md\r\n' + text + '\r\n```', dictionary))
+                    }
+                } else if (text.match(wH)) {
+                    let textb = text.replace(wH, "");
+                    embed.setDescription(wordTrans(textb, dictionary))
+                } else if (text.match(forumLink)) {
+                    let textc = text.replace(forumLink, "");
+                    embed.setDescription(wordTrans(textc, dictionary))
                 } else {
                     embed.setDescription(wordTrans(text, dictionary))
                 }
-            } else {
-                embed.setDescription(wordTrans(text, dictionary))
-            }
-        } else if (text.match(/```/gi)) {
-            const texta = text.replace(/```/gi, "");
-            if (texta.match(wH)) {
-                const textab = texta.replace(wH, "");
-                if (textab.match(forumLink)) {
-                    const textabc = textab.replace(forumLink, "");
-                    embed.setDescription(wordTrans('```md\r\n' + textabc + '\r\n```', dictionary))
-                } else {
-                    embed.setDescription(wordTrans('```md\r\n' + textab + '\r\n```', dictionary))
+      
+                embed.addField("Контакты: ", `<@${message.author.id}> \n\`@${message.author.tag}\``, false)
+      
+                if (message.member.roles.has("💎VIP")) {
+                    embed.addField("✴  ✴  ✴", `💎VIP"`, true)
                 }
-            } else if (texta.match(forumLink)) {
-                const textac = texta.replace(forumLink, "");
-                embed.setDescription(wordTrans('```md\r\n' + textac + '\r\n```', dictionary))
-            } else {
-                embed.setDescription(wordTrans('```md\r\n' + texta + '\r\n```', dictionary))
-            }
-        } else if (text.match(/\[|]/gi)) {
-            if (text.match(wH)) {
-                const textb = text.replace(wH, "");
-                if (textb.match(forumLink)) {
-                    const textbc = textb.replace(forumLink, "");
-                    embed.setDescription(wordTrans('```md\r\n' + textbc + '\r\n```', dictionary))
+              
+                embed.setThumbnail(message.author.displayAvatarURL)
+                embed.setTimestamp()
+              
+                if (message.content.match(/https?:\/\/.+\.gifv/gi)) {
+                  let msg_1 = await message.channel.send(`✴  ✴  ✴`, {embed});
+                  let msg_2 = await message.channel.send(`${img} `);
+                  
+                  await msg_2.react('⚙');
+              
+                    var _message = await message.reply("||Если вы желаете удалить своё объявление, то нажмите на ⚙ под ним в течении минуты.||");
+                    setTimeout(() => _message.delete(), 30000);
+                  
+                   const hcollector = msg_2.createReactionCollector((reaction, user) => reaction.emoji.name === '⚙' && user.id == message.author.id, {time: 60000})
+ 
+                   hcollector.on('collect', async r => {
+                     let ruser = r.users.array()[1]
+
+                     if (r.emoji.name === '⚙') {
+                       await setTimeout(() => msg_1.delete(), 2000);
+                       await setTimeout(() => msg_2.delete(), 2000);
+                       await r.remove(ruser)
+                       db.set(`minterval1_${message.channel.id}_${message.author.id}`, ginterval1)
+                       return;
+                     }
+                   })
+              
+                   hcollector.on('end', async r => {
+                     if (r.size === 0) {
+                       await msg_2.clearReactions();
+                     }
+                   });
+
                 } else {
-                    embed.setDescription(wordTrans(text, dictionary))
+                   embed.setImage(`${img} `)
+                   let msg_ = await message.channel.send(`<a:dae67631234507:583585937812881409> <a:dae67631234507:583585937812881409> <a:dae67631234507:583585937812881409>`, {embed});
+                   
+                   await msg_.react('⚙');
+              
+                    var _message = await message.reply("||Если вы желаете удалить своё объявление, то нажмите на ⚙ под ним в течении минуты.||");
+                    setTimeout(() => _message.delete(), 30000);
+              
+                   const hcollector = msg_.createReactionCollector((reaction, user) => reaction.emoji.name === '⚙' && user.id == message.author.id, {time: 60000})
+ 
+                   hcollector.on('collect', async r => {
+                     let ruser = r.users.array()[1]
+
+                     if (r.emoji.name === '⚙') {
+                       await setTimeout(() => msg_.delete(), 2000);
+                       db.set(`minterval1_${message.channel.id}_${message.author.id}`, ginterval1)
+                       return;
+                     }
+                   })
+              
+                    hcollector.on('end', async r => {
+                        if (r.size === 0) {
+                            await msg_.clearReactions();
+                        }
+                    });
+                } 
+               
+         
+                //===========Прибавление количества сообщений в канале============// 
+                db.add(`ginterval1_${message.guild.id}_${message.channel.id}`, 1)
+          
+                //===========обновление интервала для участника============// 
+                if (message.member.roles.has("💎VIP")) {
+                    db.set(`minterval1_${message.channel.id}_${message.author.id}`, ginterval1 + 4)
+                } else {
+                    db.set(`minterval1_${message.channel.id}_${message.author.id}`, ginterval1 + 6)
                 }
-            } else if (text.match(forumLink)) {
-                const textc = text.replace(forumLink, "");
-                embed.setDescription(wordTrans('```md\r\n' + textc + '\r\n```', dictionary))
-            } else {
-                embed.setDescription(wordTrans('```md\r\n' + text + '\r\n```', dictionary))
             }
-        } else if (text.match(wH)) {
-            const textb = text.replace(wH, "");
-            embed.setDescription(wordTrans(textb, dictionary))
-        } else if (text.match(forumLink)) {
-            const textc = text.replace(forumLink, "");
-            embed.setDescription(wordTrans(textc, dictionary))
-        } else {
-            embed.setDescription(wordTrans(text, dictionary))
         }
-
-        if (!message.author.bot) {
-            if (client.info.has(message.author.id)) {
-               let ava = client.info.get(message.author.id).gifava;
-               embed.setThumbnail(ava)
-            } else {
-               embed.setThumbnail(message.author.displayAvatarURL)
-            }
-            if (message.member.roles.find(r => r.id === "548566177622786051")) {
-               embed.setFooter("💎VIP💎", message.author.displayAvatarURL)
-            }
-            embed.addField("Discord: ", "<:discord:551092952361861157> <@" + message.author.id + "> (" + message.author.tag + ")", true)
-        }
-
-        embed.setImage(`${img} `)  // Нижнее изображение
-        
-        if (message.content.match(/сим-?к(?:арт)?(?:у|а)?|sim(?:-card)?/i)) {
-            if (message.channel.id === '548394288267132929') {
-                hooksim02.send(`✴  ✴  ✴`, embed);
-            } else if (message.channel.id === '548500926915149854') {
-                hooksim01.send(`✴  ✴  ✴`, embed);
-            } else {
-                var _message = await message.channel.send("<@" + message.author.id + "> \r\nСообщения о продаже сим-карт можно писать только в каналы <#548500926915149854> или <#548394288267132929>");
-                setTimeout(() => _message.delete(), 120000);
-            }
-        } else if (message.channel.id === '548394113373044749') {
-            hookhome02.send(`✴  ✴  ✴`, embed);
-        } else if (message.channel.id === '548500737534197760') {
-            hookhome01.send(`✴  ✴  ✴`, embed);
-        } else if (message.channel.id === '548394064379248660') {
-            hookcar02.send(`✴  ✴  ✴`, embed);
-        } else if (message.channel.id === '548500690826166296') {
-            hookcar01.send(`✴  ✴  ✴`, embed);
-        } else if (message.channel.id === '548394244839309313') {
-            if (message.content.match(/травк?(?:и|у|ы)|ча(?:й|я)|марихуан(?:у|ы)|нарко(?:тики)/i)) {
-                hookmar02.send(`✴  ✴  ✴`, embed);
-            } else {
-                hookgun02.send(`✴  ✴  ✴`, embed);
-            }
-        } else if (message.channel.id === '548500868186767391') {
-            if (message.content.match(/травк?(?:и|у|ы)|ча(?:й|я)|марихуан(?:у|ы)|нарко(?:тики)/i)) {
-                hookmar01.send(`✴  ✴  ✴`, embed);
-            } else {
-                hookgun01.send(`✴  ✴  ✴`, embed);
-            }
-        } else if (message.channel.id === '535024039287193602') {
-            hookbiz02.send(`✴  ✴  ✴`, embed);
-        } else if (message.channel.id === '535024367025913857') {
-            hookbiz01.send(`✴  ✴  ✴`, embed);
-        } else {
-            message.channel.send(`✴  ✴  ✴`, {embed}); 
-        }
-
-        let role = message.guild.roles.find(r => r.name === "Наблюдатель");
-        let member = message.member
-        if (!role) return;
-        member.addRole(role);
 
     // 👍 под косвенными ссылками на imgur и yapix
-    } else if (message.content.match(imyp)) { 
-        if (!message.content.match(/прода(?:м|ю)|(по)?куп(?:аю|лю)|обменяю|1\)/gi)) return; 
-        setTimeout(() => message.delete(), 1000);
-        const img = message.content.match(imyp)[0];
-        const text = message.content.replace(imyp, "");
-        let embed = new Discord.RichEmbed()
+    } else if (message.content.match(imyp)) {  
+        if (message.member.guild.id === "222674909858496512") return;
+          
+        if (message.channel.id === '548500621049987122' || message.channel.id === '548500690826166296' || message.channel.id === '548500737534197760' || 
+            message.channel.id === '548500799706234901' || message.channel.id === '548500868186767391' || message.channel.id === '548500926915149854' || 
+            message.channel.id === '548393945516998677' || message.channel.id === '548394064379248660' || message.channel.id === '548394113373044749' || 
+            message.channel.id === '548394178124709900' || message.channel.id === '548394244839309313' || message.channel.id === '548394288267132929') {
 
-        if (message.content.match(/красн(?:о|ый)|red/i)) { 
-            embed.setColor('0xFF0000')
-        } else if (message.content.match(/ч(?:е|ё)рн(?:о|ый)|black/i)) {
-            embed.setColor('0x000000')
-        } else if (message.content.match(/сер(?:о|ый)|gray/i)) {
-            embed.setColor('0x808080')
-        } else if (message.content.match(/серебрянн?(?:о|ый)|silver/i)) { 
-            embed.setColor('0xC0C0C0')
-        } else if (message.content.match(/бел(?:о|ый)|white/i)) {
-            embed.setColor('0xFFFFFF')
-        } else if (message.content.match(/розов(?:о|ый)|fuchsia/i)) {
-            embed.setColor('0xFF00FF')
-        } else if (message.content.match(/ж(?:о|ё|е)лт(?:о|ый)|yellow/i)) {
-            embed.setColor('0xFFFF00')
-        } else if (message.content.match(/зелён(?:о|ый)|green/i)) {
-            embed.setColor('0x008000')
-        } else if (message.content.match(/голубой?|aqua/i)) {
-            embed.setColor('0x00FFFF')
-        } else if (message.content.match(/син(?:е|ий)|blue/i)) {
-            embed.setColor('0x0000FF')
-        } else if (message.content.match(/коричнев(?:о|ый)|brown/i)) {
-            embed.setColor('0x8B4513')
-        } else {
-            embed.setColor('RANDOM')
-        }
+            setTimeout(() => message.delete(), 2000);
+  
+            let ginterval1 = await db.fetch(`ginterval1_${message.guild.id}_${message.channel.id}`);
+            if (ginterval1 == null) ginterval1 = 0;
 
-        if (text.match(fl)) {
-            const fL = text.match(fl)[0];
-            embed.addField('Тема на форуме: ', '[Ссылка на форум (кликабельно)](' + fL + ')', true)
-        }
-
-        if (text.match(/```(?:md|Markdown)/gi)) {
-            if (text.match(wH)) {
-                const textb = text.replace(wH, "");
-                if (textb.match(forumLink)) {
-                    const textbc = textb.replace(forumLink, "");
-                    embed.setDescription(wordTrans(textbc, dictionary))
-                } else {
-                    embed.setDescription(wordTrans(text, dictionary))
-                }
+            let minterval1 = await db.fetch(`minterval1_${message.channel.id}_${message.author.id}`);
+            if (minterval1 == null) minterval1 = ginterval1;
+  
+            if (minterval1 > ginterval1) {
+                let pinterval = minterval1 - ginterval1
+                return message.reply(`Вы отправляете объявление слишком часто! Подождите **${pinterval}** объявлений от других участников!`).then(m => m.delete(30000)); 
+      
             } else {
-                embed.setDescription(wordTrans(text, dictionary))
-            }
-        } else if (text.match(/```/gi)) {
-            const texta = text.replace(/```/gi, "");
-            if (texta.match(wH)) {
-                const textab = texta.replace(wH, "");
-                if (textab.match(forumLink)) {
-                    const textabc = textab.replace(forumLink, "");
-                    embed.setDescription(wordTrans('```md\r\n' + textabc + '\r\n```', dictionary))
-                } else {
-                    embed.setDescription(wordTrans('```md\r\n' + textab + '\r\n```', dictionary))
-                }
-            } else if (texta.match(forumLink)) {
-                const textac = texta.replace(forumLink, "");
-                embed.setDescription(wordTrans('```md\r\n' + textac + '\r\n```', dictionary))
-            } else {
-                embed.setDescription(wordTrans('```md\r\n' + texta + '\r\n```', dictionary))
-            }
-        } else if (text.match(/\[|]/gi)) {
-            if (text.match(wH)) {
-                const textb = text.replace(wH, "");
-                if (textb.match(forumLink)) {
-                    const textbc = textb.replace(forumLink, "");
-                    embed.setDescription(wordTrans('```md\r\n' + textbc + '\r\n```', dictionary))
-                } else {
-                    embed.setDescription(wordTrans(text, dictionary))
-                }
-            } else if (text.match(forumLink)) {
-                const textc = text.replace(forumLink, "");
-                embed.setDescription(wordTrans('```md\r\n' + textc + '\r\n```', dictionary))
-            } else {
-                embed.setDescription(wordTrans('```md\r\n' + text + '\r\n```', dictionary))
-            }
-        } else if (text.match(wH)) {
-            const textb = text.replace(wH, "");
-            embed.setDescription(wordTrans(textb, dictionary))
-        } else if (text.match(forumLink)) {
-            const textc = text.replace(forumLink, "");
-            embed.setDescription(wordTrans(textc, dictionary))
-        } else {
-            embed.setDescription(wordTrans(text, dictionary))
-        }
+                
+                let img = message.content.match(imyp)[0];
+                let text = message.content.replace(imyp, "");
+                
+                let embed = new Discord.RichEmbed()
 
-        if (message.channel.id === '452798109475667978' || message.channel.id === '452798191021195264') {
-            if (message.member.roles.find(r => r.id === "419589683358597124") || message.member.roles.find(r => r.id === "419556276620492800")) {
-                if (message.content.startsWith("Продам") || message.content.startsWith("Куплю") || message.content.startsWith("[Продам") || message.content.startsWith("[Куплю")) {
-                    if (client.info.has(message.author.id)) {
-                       let ava = client.info.get(message.author.id).gifava;
-                       embed.setThumbnail(ava)
+                if (message.content.match(/красн(?:о|ый)|red/i)) { 
+                    embed.setColor('0xFF0000')
+                } else if (message.content.match(/ч(?:е|ё)рн(?:о|ый)|black/i)) {
+                    embed.setColor('0x000000')
+                } else if (message.content.match(/сер(?:о|ый)|gray/i)) {
+                   embed.setColor('0x808080')
+                } else if (message.content.match(/серебрянн?(?:о|ый)|silver/i)) { 
+                   embed.setColor('0xC0C0C0')
+                } else if (message.content.match(/бел(?:о|ый)|white/i)) {
+                   embed.setColor('0xFFFFFF')
+                } else if (message.content.match(/розов(?:о|ый)|fuchsia/i)) {
+                   embed.setColor('0xFF00FF')
+                } else if (message.content.match(/ж(?:о|ё|е)лт(?:о|ый)|yellow/i)) {
+                   embed.setColor('0xFFFF00')
+                } else if (message.content.match(/зелён(?:о|ый)|green/i)) {
+                   embed.setColor('0x008000')
+                } else if (message.content.match(/голубой?|aqua/i)) {
+                   embed.setColor('0x00FFFF')
+                } else if (message.content.match(/син(?:е|ий)|blue/i)) {
+                   embed.setColor('0x0000FF')
+                } else if (message.content.match(/коричнев(?:о|ый)|brown/i)) {
+                   embed.setColor('0x8B4513')
+          
+                } else {
+                    let color = message.member.displayHexColor;
+                    if (color == '#000000') {
+                        color = 0x36393e;
+                    } else if (message.member.roles.find(r => r.name === "Администрация")) {
+                        embed.setColor('#FF6347')
+                    } else if (message.member.roles.find(r => r.name === "Модератор")) {
+                        embed.setColor('#008000')
+                    } else if (message.member.roles.find(r => r.name === "VIP")) {
+                        embed.setColor('#4caef1')
+                    } else if (message.member.roles.some(r=>["Барахольщик новичок", "Барахольщик", "Опытный барахольщик", "Продвинутый барахольщик"].includes(r.name)) ) {
+                        if (message.member.roles.find(r => r.name === "Модератор")) {
+                            embed.setColor('0x00FF00')
+                        } else {
+                            embed.setColor(0x36393e)
+                        }
                     } else {
-                       embed.setThumbnail(message.author.displayAvatarURL)
+                        embed.setColor(color)
                     }
-                    if (message.member.roles.find(r => r.id === "464735824748216321") || message.member.roles.find(r => r.id === "419475113772056586")) {
-                        embed.setFooter("💎VIP💎", message.author.displayAvatarURL)
-                    }
-                    embed.addField("Discord", "<:discord:465700132063674378> <@" + message.author.id + "> (" + message.author.tag + ")", true)
                 }
-            } else if (!message.author.bot) {
-                if (client.info.has(message.author.id)) {
-                   let ava = client.info.get(message.author.id).gifava;
-                   embed.setThumbnail(ava)
-                } else {
-                   embed.setThumbnail(message.author.displayAvatarURL)
-                }
-                if (message.member.roles.find(r => r.id === "464735824748216321") || message.member.roles.find(r => r.id === "419475113772056586")) {
-                   embed.setFooter("💎VIP💎", message.author.displayAvatarURL)
-                }
-                embed.addField("Discord: ", "<:discord:465700132063674378> <@" + message.author.id + "> (" + message.author.tag + ")", true)
-            }
-        } else if (!message.author.bot) {
-            if (client.info.has(message.author.id)) {
-                let ava = client.info.get(message.author.id).gifava;
-                embed.setThumbnail(ava)
-            } else {
+              
                 embed.setThumbnail(message.author.displayAvatarURL)
+
+                if (text.match(fl)) {
+                    let fL = text.match(fl)[0];
+                    embed.addField('Тема на форуме: ', '[Ссылка на форум (кликабельно)](' + fL + ')', true)
+                }
+
+                if (text.match(/```(?:md|Markdown)/gi)) {
+                    if (text.match(wH)) {
+                        let textb = text.replace(wH, "");
+                        if (textb.match(forumLink)) {
+                            let textbc = textb.replace(forumLink, "");
+                            embed.setDescription(wordTrans(textbc, dictionary))
+                        } else {
+                            embed.setDescription(wordTrans(text, dictionary))
+                        }
+                    } else {
+                        embed.setDescription(wordTrans(text, dictionary))
+                    }
+                } else if (text.match(/```/gi)) {
+                    let texta = text.replace(/```/gi, "");
+                    if (texta.match(wH)) {
+                        let textab = texta.replace(wH, "");
+                        if (textab.match(forumLink)) {
+                            let textabc = textab.replace(forumLink, "");
+                            embed.setDescription(wordTrans('```md\r\n' + textabc + '\r\n```', dictionary))
+                        } else {
+                            embed.setDescription(wordTrans('```md\r\n' + textab + '\r\n```', dictionary))
+                        }
+                    } else if (texta.match(forumLink)) {
+                        let textac = texta.replace(forumLink, "");
+                        embed.setDescription(wordTrans('```md\r\n' + textac + '\r\n```', dictionary))
+                    } else {
+                        embed.setDescription(wordTrans('```md\r\n' + texta + '\r\n```', dictionary))
+                    }
+                } else if (text.match(/\[|]/gi)) {
+                    if (text.match(wH)) {
+                        let textb = text.replace(wH, "");
+                        if (textb.match(forumLink)) {
+                            let textbc = textb.replace(forumLink, "");
+                            embed.setDescription(wordTrans('```md\r\n' + textbc + '\r\n```', dictionary))
+                        } else {
+                            embed.setDescription(wordTrans(text, dictionary))
+                        }
+                    } else if (text.match(forumLink)) {
+                        let textc = text.replace(forumLink, "");
+                        embed.setDescription(wordTrans('```md\r\n' + textc + '\r\n```', dictionary))
+                    } else {
+                        embed.setDescription(wordTrans('```md\r\n' + text + '\r\n```', dictionary))
+                    }
+                } else if (text.match(wH)) {
+                    let textb = text.replace(wH, "");
+                    embed.setDescription(wordTrans(textb, dictionary))
+                } else if (text.match(forumLink)) {
+                    let textc = text.replace(forumLink, "");
+                    embed.setDescription(wordTrans(textc, dictionary))
+                } else {
+                    embed.setDescription(wordTrans(text, dictionary))
+                }
+      
+                embed.addField("Контакты: ", `<@${message.author.id}> \n\`@${message.author.tag}\``, false)
+      
+                if (message.member.roles.has("💎VIP")) {
+                    embed.addField("✴  ✴  ✴", `💎VIP"`, true)
+                }
+
+                embed.setTimestamp()
+    
+                let msg_1 = await message.channel.send(`✴  ✴  ✴`, {embed});
+                let msg_2 = await message.channel.send(`${img} `);
+  
+                //===========Прибавление количества сообщений в канале============// 
+                db.add(`ginterval1_${message.guild.id}_${message.channel.id}`, 1)
+          
+                //===========обновление интервала для участника============// 
+                if (message.member.roles.has("💎VIP")) {
+                    db.set(`minterval1_${message.channel.id}_${message.author.id}`, ginterval1 + 4)
+                } else {
+                    db.set(`minterval1_${message.channel.id}_${message.author.id}`, ginterval1 + 6)
+                }
+              
+                await msg_2.react('⚙');
+              
+                var _message = await message.reply("||Если вы желаете удалить своё объявление, то нажмите на ⚙ под ним в течении минуты.||");
+                setTimeout(() => _message.delete(), 30000);
+              
+                const hcollector = msg_2.createReactionCollector((reaction, user) => reaction.emoji.name === '⚙' && user.id == message.author.id, {time: 60000})
+ 
+                hcollector.on('collect', async r => {
+                   let ruser = r.users.array()[1]
+
+                   if (r.emoji.name === '⚙') {
+                      await setTimeout(() => msg_1.delete(), 2000);
+                      await setTimeout(() => msg_2.delete(), 2000);
+                      db.set(`minterval1_${message.channel.id}_${message.author.id}`, ginterval1)
+                      return;
+                   }
+                })
+              
+                hcollector.on('end', async r => {
+                    if (r.size === 0) {
+                        await msg_2.clearReactions();
+                    }
+                });
             }
-            if (message.member.roles.find(r => r.id === "464735824748216321") || message.member.roles.find(r => r.id === "419475113772056586")) {
-                embed.setFooter("💎VIP💎", message.author.displayAvatarURL)
-            }
-            embed.addField("Discord: ", "<:discord:465700132063674378> <@" + message.author.id + "> \r\n`@" + message.author.tag + "`")
         }
-        
-        await message.channel.send(`✴  ✴  ✴`, {embed});
-        await message.channel.send(`${img} `);
 
-        let role = message.guild.roles.find(r => r.name === "Наблюдатель");
-        let member = message.member
-        if (!role) return;
-        member.addRole(role);
+    } else if (message.channel.id === '548500621049987122' || message.channel.id === '548500690826166296' || message.channel.id === '548500737534197760' || 
+            message.channel.id === '548500799706234901' || message.channel.id === '548500868186767391' || message.channel.id === '548500926915149854' || 
+            message.channel.id === '548393945516998677' || message.channel.id === '548394064379248660' || message.channel.id === '548394113373044749' || 
+            message.channel.id === '548394178124709900' || message.channel.id === '548394244839309313' || message.channel.id === '548394288267132929') {
 
-    } else if (message.content.startsWith("Продам") || message.content.startsWith("продам") || message.content.startsWith("[Продам") || message.content.startsWith("[Куплю") || message.content.startsWith("[ Продам") || message.content.startsWith("[ Куплю") || message.content.startsWith("Куплю") || message.content.startsWith("куплю") || message.content.startsWith("Prodam") || message.content.startsWith("Продаю")) {
-        if(message.author.id === '455821821351297034' || message.author.id === '455822678964568075' || message.author.id === '455822024690892820' || message.author.id === '455822499096297482') return;
-        setTimeout(() => message.delete(), 1000);
-        let author = message.author;
+        if (message.content.startsWith("sell") || message.content.startsWith("Продаётся") || message.content.startsWith("Sell") || 
+            message.content.startsWith("Продается") || message.content.startsWith("Продажа") || message.content.startsWith("Продам") || 
+            message.content.startsWith("продам") || message.content.startsWith("[Продам") || message.content.startsWith("[Куплю") || 
+            message.content.startsWith("[ Продам") || message.content.startsWith("[ Куплю") || message.content.startsWith("Куплю") || 
+            message.content.startsWith("куплю") || message.content.startsWith("Prodam") || message.content.startsWith("Продаю") || 
+            message.content.startsWith("Рассмотрю варианты") || message.content.startsWith("Обменяю") || message.content.startsWith("Обмен") || 
+            message.content.startsWith("**Продам**") || message.content.startsWith("**Куплю**") || message.content.startsWith("КУплю") || 
+            message.content.startsWith("ПРодам") || message.content.startsWith("Ищу") || message.content.startsWith("Услуги") || 
+            message.channel.id === '557967623619477524' || message.channel.id === '557967698756370452') {
+      
+            setTimeout(() => message.delete(), 2000);
+          
+            let ginterval1 = await db.fetch(`ginterval1_${message.guild.id}_${message.channel.id}`);
+            if (ginterval1 == null) ginterval1 = 0;
+
+            let minterval1 = await db.fetch(`minterval1_${message.channel.id}_${message.author.id}`);
+            if (minterval1 == null) minterval1 = ginterval1;
+          
+            if (minterval1 > ginterval1) {
+                let pinterval = minterval1 - ginterval1
+                return message.reply(`Вы отправляете объявление слишком часто! Подождите **${pinterval}** объявлений от других участников!`).then(m => m.delete(30000)); 
+          
+            } else {
+      
+                let author = message.author;
 
         let embed = new Discord.RichEmbed()
             
@@ -1158,56 +1286,55 @@ module.exports = async (client, message) => {
             embed.addField("Discord: ", "<:discord:551092952361861157> <@" + message.author.id + "> \r\n`@" + message.author.tag + "`")
         }
       
-        if (message.member.roles.find(r => r.id === "464735824748216321") || message.member.roles.find(r => r.id === "419475113772056586")) {
-            embed.setFooter("💎VIP💎", message.author.displayAvatarURL)
+        if (message.member.roles.has("💎VIP")) {
+                    embed.addField("✴  ✴  ✴", `💎VIP`, true)
         }
-        
+      
+                Attachment.forEach(async function(attachment) {
+                    embed.setImage(attachment.url);
+                })
+      
+                embed.setTimestamp()
 
-        Attachment.forEach(async function(attachment) {
-            embed.setImage(attachment.url);
-        })
+                let msg_ = await message.channel.send(`✴  ✴  ✴`, {embed});
+          
+                 //===========Прибавление количества сообщений в канале============// 
+                db.add(`ginterval1_${message.guild.id}_${message.channel.id}`, 1)
+          
+                //===========обновление интервала для участника============// 
+                if (message.member.roles.has("💎VIP")) {
+                    db.set(`minterval1_${message.channel.id}_${message.author.id}`, ginterval1 + 4)
+                } else {
+                    db.set(`minterval1_${message.channel.id}_${message.author.id}`, ginterval1 + 6)
+                }
+              
+                await msg_.react('⚙');
+              
+                var _message = await message.reply("||Если вы желаете удалить своё объявление, то нажмите на ⚙ под ним в течении минуты.||");
+                setTimeout(() => _message.delete(), 30000);
+              
+                const hcollector = msg_.createReactionCollector((reaction, user) => reaction.emoji.name === '⚙' && user.id == message.author.id, {time: 60000})
+ 
+                hcollector.on('collect', async r => {
+                   let ruser = r.users.array()[1]
 
-        if (message.content.match(/сим-?к(?:арт)?(?:у|а)?|sim(?:-card)?/i)) {
-            if (message.channel.id === '548394288267132929') {
-                hooksim02.send(`✴  ✴  ✴`, embed);
-            } else if (message.channel.id === '548500926915149854') {
-                hooksim01.send(`✴  ✴  ✴`, embed);
-            } else {
-                var _message = await message.channel.send("<@" + message.author.id + "> \r\nСообщения о продаже сим-карт можно писать только в каналы <#548500926915149854> или <#548394288267132929>");
-                setTimeout(() => _message.delete(), 120000);
+                   if (r.emoji.name === '⚙') {
+                      await setTimeout(() => msg_.delete(), 2000);
+                      db.set(`minterval1_${message.channel.id}_${message.author.id}`, ginterval1)
+                      return;
+                   }
+                })
+              
+                hcollector.on('end', async r => {
+                    if (r.size === 0) {
+                        await msg_.clearReactions();
+                    }
+                });
             }
-        } else if (message.channel.id === '548394113373044749') {
-            hookhome02.send(`✴  ✴  ✴`, embed);
-        } else if (message.channel.id === '548500737534197760') {
-            hookhome01.send(`✴  ✴  ✴`, embed);
-        } else if (message.channel.id === '548394064379248660') {
-            hookcar02.send(`✴  ✴  ✴`, embed);
-        } else if (message.channel.id === '548500690826166296') {
-            hookcar01.send(`✴  ✴  ✴`, embed);
-        } else if (message.channel.id === '548394244839309313') {
-            if (message.content.match(/травк?(?:и|у|ы)|ча(?:й|я)|марихуан(?:у|ы)|нарко(?:тики)/i)) {
-                hookmar02.send(`✴  ✴  ✴`, embed);
-            } else {
-                hookgun02.send(`✴  ✴  ✴`, embed);
-            }
-        } else if (message.channel.id === '548500868186767391') {
-            if (message.content.match(/травк?(?:и|у|ы)|ча(?:й|я)|марихуан(?:у|ы)|нарко(?:тики)/i)) {
-                hookmar01.send(`✴  ✴  ✴`, embed);
-            } else {
-                hookgun01.send(`✴  ✴  ✴`, embed);
-            }
-        } else if (message.channel.id === '535024039287193602') {
-            hookbiz02.send(`✴  ✴  ✴`, embed);
-        } else if (message.channel.id === '535024367025913857') {
-            hookbiz01.send(`✴  ✴  ✴`, embed);
-        } else {
-            message.channel.send(`✴  ✴  ✴`, {embed}); 
+          } else {
+            await setTimeout(() => message.delete(), 2000);
+            return await message.reply(`Ваше объявление не начинается ни с одного из этих слов: Продам, Куплю, Обменяю, Рассмотрю варианты, Ищу, Услуги`).then(m => m.delete(30000)); 
         }
-       
-        let role = message.guild.roles.find(r => r.name === "Наблюдатель");
-        let member = message.member
-        if (!role) return;
-        member.addRole(role);
     }
 
     if (message.isMentioned(client.user)) {

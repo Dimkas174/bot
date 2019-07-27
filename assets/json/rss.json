@@ -3,40 +3,5 @@
     "PLAYMP": {
         "description" : "PLAYMP",
         "url" : "https://www.youtube.com/feeds/videos.xml?channel_id=UChUCgKZtJxAjmg8W5NeNAMA"
-    },
-  
-    "MisterKey": {
-        "description" : "MisterKey",
-        "url" : "https://www.youtube.com/feeds/videos.xml?channel_id=UCDeDnXAb4qBjdHweGPJPriA"
-    },
-
-    "Richi": {
-        "description" : "Richi",
-        "url" : "https://www.youtube.com/feeds/videos.xml?channel_id=UCfE0LhwdtKc-aUaVlyuhfUw"
-    },
-  
-    "Vladislav Pavlov": {
-        "description" : "Vladislav Pavlov",
-        "url" : "https://www.youtube.com/feeds/videos.xml?channel_id=UCGAwjzwErE_V5B8s-1Pk5iA"
-    },
-  
-    "TaGs Play Theme": {
-        "description" : "TaGs Play Theme",
-        "url" : "https://www.youtube.com/feeds/videos.xml?channel_id=UCxOJ083McFNRqUty-bgTx8Q"
-    },
-  
-    "Filipin is bro": {
-        "description" : "Filipin is bro",
-        "url" : "https://www.youtube.com/feeds/videos.xml?channel_id=UCp07Dwx0hHg3tM1Is8kQy4Q"
-    },
-
-    "Joe Speen": {
-      "description" : "Joe Speen",
-      "url" : "https://www.youtube.com/feeds/videos.xml?channel_id=UCLizDDpxiFRoqTLlMyGX7lQ"
-    },
-  
-    "SodaEffect": {
-      "description" : "SodaEffect",
-      "url" : "https://www.youtube.com/feeds/videos.xml?channel_id=UCa2oFpjziUQIImcpkrflwDw"
     }
 }
