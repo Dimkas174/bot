@@ -48,7 +48,7 @@ module.exports = class InfoserverCommand extends Command {
     }
 
     async run(msg) {
-        msg.react('🔖');
+      msg.react('🔖');
 
         let embed = new RichEmbed()
         .setColor('RANDOM')   

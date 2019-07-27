@@ -1,7 +1,8 @@
 const { Command } = require('discord.js-commando'),
       { RichEmbed } = require('discord.js'),
       request = require('request'),
-      cheerio = require('cheerio');
+      cheerio = require('cheerio'),
+      vmpimg = 'https://i.imgur.com/r9ItZ6p.gif';
 
 module.exports = class RpnickCommand extends Command {
     constructor(client) {
@@ -75,7 +76,7 @@ module.exports = class RpnickCommand extends Command {
                   let nick = text.replace(/имя: /gi, "");
           
                   let embed = new RichEmbed()
-                  embed.setAuthor(`Генератор РП ников`, "https://i.imgur.com/ZApCmhq.png")
+                  embed.setAuthor(`Генератор РП ников`, vmpimg)
                   embed.setColor('RANDOM')
                   embed.setDescription(`Вам наверняка подойдёт это имя:\n\`\`\`css
 ${nick}

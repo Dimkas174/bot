@@ -690,7 +690,7 @@ module.exports = async (client, message) => {
             if (message.content.match(/прода(?:м|ю)/gi)) {
                 embed.addField("Описание транспорта:", vehgta.elegyrh.des)
             }
-        } else if (message.content.match(/(?:elegy|элеги(?:ю|я)?) ?(?:retro|ретро) ?(?:custom|кастом)?/i)) {
+        } else if (message.content.match(/(?:elegy|элеги(?:ю|я)?) ?(?:retro|ретро) ?(?:custom|кастом|заказной)?/i)) {
             var randelegyrimg = vehgta.elegyr.img[Math.floor(Math.random() * vehgta.elegyr.img.length)];
             embed.setImage(randelegyrimg)
         } else if (message.content.match(/enduro|эндуро/i)) {

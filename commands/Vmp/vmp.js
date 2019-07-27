@@ -18,7 +18,7 @@ module.exports = class VmpCommand extends Command {
         super(client, {
             name: 'vmp',
             aliases: ['статус', 'status'],
-            group: 'games',
+            group: 'vmp',
             memberName: 'vmp',
             description: 'Статус V-MP сервера.',
             examples: ['vmp <01|02>'],
