@@ -72,6 +72,7 @@ client.registry
         ['single', 'Простой ответ'],
         ['textedit', 'Операции с текстом'],
         ['utility', 'Утилиты'],
+        ['vmp', 'V-MP'],
         ['voice', 'Голосовой канал']
     ])
     .registerDefaultGroups()
@@ -161,7 +162,7 @@ client.on('ready', () => {
                 case 'PLAYMP':
                 // ярмарка общий
                 client.channels.find(c => c.id === '548768443751464961').send(articleToPost.link);
-                // барахолка news
+                // ярмарка news
                 client.channels.find(c => c.id === '548402222208122880').send(articleToPost.link);
                 break;
                 
@@ -196,14 +197,14 @@ client.on('ready', () => {
                             let desbiv = desbv.replace(imgvk, "");
                             let desbivl = desbiv.replace(linkvk, "");
                             // ярмарка
-                            client.channels.find(c => c.id === '548768443751464961').send(`${desbivl} \n${linkvk} \n${videovk} \n${imgvk} \n**Подробнее по ссылке:** ${articleToPost.link}`);
+                            client.channels.find(c => c.id === '548402222208122880').send(`${desbivl} \n${linkvk} \n${videovk} \n${imgvk} \n**Подробнее по ссылке:** ${articleToPost.link}`);
                          } else {
                             let imgvk = dess.match(/https?:\/\/(?:pp|sun[0-9-]{2,4}).userapi.com\/[a-zA-Z0-9/-]{2,}.jpg/gi)[0];
                             let videovk = dess.match(/https?:\/\/vk.com\/video-[0-9_]{2,}/gi)[0];
                             let desbv = dess.replace(videovk, "");
                             let desbiv = desbv.replace(imgvk, "");
                             // ярмарка
-                            client.channels.find(c => c.id === '548768443751464961').send(`${desbiv} \n${videovk} \n${imgvk} \n**Подробнее по ссылке:** ${articleToPost.link}`);
+                            client.channels.find(c => c.id === '548402222208122880').send(`${desbiv} \n${videovk} \n${imgvk} \n**Подробнее по ссылке:** ${articleToPost.link}`);
                          }
                       } else if (dess.match(/https?:\/\/(?:m.vk.com|v-mp.ru)\/(?:@-23881761[0-9a-zA-Z-]{2,}|[a-zA-Z0-9]{2,}.html)/gi)) {
                          let imgvk = dess.match(/https:\/\/pp.userapi.com\/[a-zA-Z0-9/]{2,}.jpg/gi)[0];
@@ -211,12 +212,12 @@ client.on('ready', () => {
                          let desbi = dess.replace(imgvk, "");
                          let desbil = desbi.replace(linkvk, "");
                         // ярмарка
-                        client.channels.find(c => c.id === '548768443751464961').send(`${desbil} \n${linkvk} \n${imgvk} \n**Подробнее по ссылке:** ${articleToPost.link}`);
+                        client.channels.find(c => c.id === '548402222208122880').send(`${desbil} \n${linkvk} \n${imgvk} \n**Подробнее по ссылке:** ${articleToPost.link}`);
                       } else {
                          let imgvk = dess.match(/https?:\/\/(?:pp|sun[0-9-]{2,4}).userapi.com\/[a-zA-Z0-9/-]{2,}.jpg/gi)[0];
                          let desbi = dess.replace(imgvk, "");
                          // ярмарка
-                         client.channels.find(c => c.id === '548768443751464961').send(`${desbi} \n${imgvk} \n**Подробнее по ссылке:** ${articleToPost.link}`);
+                         client.channels.find(c => c.id === '548402222208122880').send(`${desbi} \n${imgvk} \n**Подробнее по ссылке:** ${articleToPost.link}`);
                       }
                      
                    } else if (dess.match(/https?:\/\/vk.com\/video-[0-9_]{2,}/gi)) {
@@ -226,23 +227,23 @@ client.on('ready', () => {
                            let desbv = dess.replace(videovk, "");
                            let desbvl = desbv.replace(linkvk, "");
                            // ярмарка
-                           client.channels.find(c => c.id === '548768443751464961').send(`${desbvl} \n${linkvk} \n${videovk} \n**Подробнее по ссылке:** ${articleToPost.link}`);
+                           client.channels.find(c => c.id === '548402222208122880').send(`${desbvl} \n${linkvk} \n${videovk} \n**Подробнее по ссылке:** ${articleToPost.link}`);
                        } else {
                            let videovk = dess.match(/https?:\/\/vk.com\/video-[0-9_]{2,}/gi)[0];
                            let desbv = dess.replace(videovk, "");
                            // ярмарка
-                          client.channels.find(c => c.id === '548768443751464961').send(`${desbv} \n${videovk} \n**Подробнее по ссылке:** ${articleToPost.link}`);
+                          client.channels.find(c => c.id === '548402222208122880').send(`${desbv} \n${videovk} \n**Подробнее по ссылке:** ${articleToPost.link}`);
                        }
                      
                    } else if (dess.match(/https?:\/\/(?:m.vk.com|v-mp.ru)\/(?:@-23881761[0-9a-zA-Z-]{2,}|[a-zA-Z0-9]{2,}.html)/gi)) {
                        let linkvk = dess.match(/https?:\/\/(?:m.vk.com|v-mp.ru)\/(?:@-23881761[0-9a-zA-Z-]{2,}|[a-zA-Z0-9]{2,}.html)/gi)[0];
                        let desbl = dess.replace(linkvk, "");
                        // ярмарка
-                      client.channels.find(c => c.id === '548768443751464961').send(`${desbl} \n${linkvk} \n**Подробнее по ссылке:** ${articleToPost.link}`);
+                      client.channels.find(c => c.id === '548402222208122880').send(`${desbl} \n${linkvk} \n**Подробнее по ссылке:** ${articleToPost.link}`);
                      
                    } else {
                       // ярмарка
-                      client.channels.find(c => c.id === '548768443751464961').send(`${dess} \n**Подробнее по ссылке:** ${articleToPost.link}`);
+                      client.channels.find(c => c.id === '548402222208122880').send(`${dess} \n**Подробнее по ссылке:** ${articleToPost.link}`);
                    }
                   
                 } else if (articleToPost.link.match(/https?:\/\/9gag.com\/gag\/[a-zA-Z0-9]{2,}/gi)) {

@@ -53,29 +53,34 @@ module.exports = class WeatherCommand extends Command {
         
       } else {
 
-        weather.find ({
-				  search: query,
-				  degreeType: 'C'
-        }, function(err, result) {
-				  if (err) {
-					  msg.reply(`На запрос \`${query}\` нет результатов.`)
-            
-				  };
-          
-          const strana = `${result[0].location.name}`
-        
-           const embed = new RichEmbed()
-            embed.setColor('RANDOM')
-            embed.setTimestamp()
-            embed.setTitle(result[0].location.name)
-            embed.setURL(`https://www.google.com/maps/search/${encodeURIComponent(query)}`)
-            embed.setThumbnail(result[0].current.imageUrl)
-            embed.addField('Температура', `🌡 ${(result[0].current.temperature)} °C`, true)
-            embed.addField('По ощущению', `🌡 ${(result[0].current.feelslike)} °C`, true)
-            embed.addField('Влажность', `💧 ${result[0].current.humidity} %`, true)
-            embed.addField('Скорость ветра', `🌬 ${(result[0].current.windspeed)}`, true)
-            return msg.embed(embed).catch(console.error);
-        });
+         try {
+           weather.find ({
+				     search: query,
+				     degreeType: 'C'
+           }, function(err, result) {
+             
+             if (err) {
+		           return msg.say(err.stack)
+             } else if (result === undefined || result.length === 0) {
+               return msg.say("Не найдено!")
+             } else {
+             const embed = new RichEmbed()
+             embed.setColor('RANDOM')
+             embed.setTimestamp()
+             embed.setTitle(result[0].location.name)
+             embed.setURL(`https://www.google.com/maps/search/${encodeURIComponent(query)}`)
+             embed.setThumbnail(result[0].current.imageUrl)
+             embed.addField('Температура', `🌡 ${(result[0].current.temperature)} °C`, true)
+             embed.addField('По ощущению', `🌡 ${(result[0].current.feelslike)} °C`, true)
+             embed.addField('Влажность', `💧 ${result[0].current.humidity} %`, true)
+             embed.addField('Скорость ветра', `🌬 ${(result[0].current.windspeed)}`, true)
+             return msg.embed(embed).catch(console.error);
+             }
+           });
+           
+        } catch(err) {
+		       return msg.say(err.stack);
+	      }
       }
-      }
+     }
 };

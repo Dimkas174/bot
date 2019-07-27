@@ -1,7 +1,5 @@
 const { Command } = require('discord.js-commando'),
-      got = require('got'),
       { RichEmbed } = require('discord.js'),
-      API_KEY = 'dc6zaTOxFJmzC',
       quiz = require('../../assets/json/car');
 
 module.exports = class VehCommand extends Command {
@@ -37,9 +35,6 @@ module.exports = class VehCommand extends Command {
 
         if (msg.guild.id === '548383798425813012') {
             if (msg.channel.id === '551009249556430850') {
- 
-                const text = 'Congratulations'
-                const res = await got(`http://api.giphy.com/v1/gifs/random?api_key=${API_KEY}&tag=${encodeURIComponent(text)}`, { json: true });
                         
                 const item = quiz[Math.floor(Math.random() * quiz.length)];
                 const linkCheck = /https?:\/\/.+\.(?:png|jpg|jpeg)/gi;
@@ -67,11 +62,7 @@ module.exports = class VehCommand extends Command {
                             embed.setThumbnail(collected.first().author.displayAvatarURL)
                         }
                         embed.addField("Правильные ответы", item.answers, true)
-                        if (!res || !res.body || !res.body.data) {
-                            embed.setImage(`https://media1.tenor.com/images/4f586b8d5cdc536ada9889b58e6d91e8/tenor.gif`)
-                        } else { 
-                            embed.setImage(res.body.data.image_url)
-                        }
+                        embed.setImage(`https://media1.tenor.com/images/4f586b8d5cdc536ada9889b58e6d91e8/tenor.gif`)
                         embed.setFooter("Вы сново сможете использовать команду /car спустя 30 секунд после предыдущей!", this.client.user.displayAvatarURL)
                         msg.embed(embed);             
                     })
@@ -91,8 +82,6 @@ module.exports = class VehCommand extends Command {
                 setTimeout(() => _message.delete(), 60000);
             }
         } else {
-            const text = 'Congratulations'
-            const res = await got(`http://api.giphy.com/v1/gifs/random?api_key=${API_KEY}&tag=${encodeURIComponent(text)}`, { json: true });
           
             const item = quiz[Math.floor(Math.random() * quiz.length)];
             const linkCheck = /https?:\/\/.+\.(?:png|jpg|jpeg)/gi;
@@ -120,11 +109,7 @@ module.exports = class VehCommand extends Command {
                         embed.setThumbnail(collected.first().author.displayAvatarURL)
                     }
                     embed.addField("Правильные ответы", item.answers, true)
-                    if (!res || !res.body || !res.body.data) {
-                        embed.setImage(`https://media1.tenor.com/images/4f586b8d5cdc536ada9889b58e6d91e8/tenor.gif`)
-                    } else { 
-                        embed.setImage(res.body.data.image_url)
-                    }
+                    embed.setImage(`https://media1.tenor.com/images/4f586b8d5cdc536ada9889b58e6d91e8/tenor.gif`)
                     embed.setFooter("Вы сново сможете использовать команду /car спустя 30 секунд после предыдущей!", this.client.user.displayAvatarURL)
                     msg.embed(embed);
                 })
