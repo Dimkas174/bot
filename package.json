@@ -55,7 +55,7 @@
     "overwatch-js": "^1.8.0",
     "path": "^0.12.7",
     "path-to-regexp": "^3.0.0",
-    "qs": "^6.7.0",
+    "qs": "^6.7.3",
     "querystring": "^0.2.0",
     "random-puppy": "^1.1.0",
     "request": "^2.88.0",
